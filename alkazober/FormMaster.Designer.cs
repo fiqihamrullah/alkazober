@@ -67,7 +67,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtTechnique = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtDesgination = new System.Windows.Forms.TextBox();
+            this.txtDesignation = new System.Windows.Forms.TextBox();
             this.dgvToPD = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btnHapusUser = new System.Windows.Forms.Button();
@@ -138,6 +138,7 @@
             this.btnHapusProduk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHapusProduk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHapusProduk.UseVisualStyleBackColor = false;
+            this.btnHapusProduk.Click += new System.EventHandler(this.btnHapusProduk_Click);
             // 
             // groupBox1
             // 
@@ -446,6 +447,7 @@
             this.btnHapusToPD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHapusToPD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHapusToPD.UseVisualStyleBackColor = false;
+            this.btnHapusToPD.Click += new System.EventHandler(this.btnHapusToPD_Click);
             // 
             // btnSimpanToPD
             // 
@@ -467,7 +469,7 @@
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.txtTechnique);
             this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.txtDesgination);
+            this.groupBox5.Controls.Add(this.txtDesignation);
             this.groupBox5.Location = new System.Drawing.Point(8, 6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(359, 235);
@@ -519,13 +521,13 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Designation";
             // 
-            // txtDesgination
+            // txtDesignation
             // 
-            this.txtDesgination.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesgination.Location = new System.Drawing.Point(6, 40);
-            this.txtDesgination.Name = "txtDesgination";
-            this.txtDesgination.Size = new System.Drawing.Size(76, 35);
-            this.txtDesgination.TabIndex = 4;
+            this.txtDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesignation.Location = new System.Drawing.Point(6, 40);
+            this.txtDesignation.Name = "txtDesignation";
+            this.txtDesignation.Size = new System.Drawing.Size(76, 35);
+            this.txtDesignation.TabIndex = 4;
             // 
             // dgvToPD
             // 
@@ -597,6 +599,7 @@
             this.txtKataSandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKataSandi.Location = new System.Drawing.Point(9, 113);
             this.txtKataSandi.Name = "txtKataSandi";
+            this.txtKataSandi.PasswordChar = '*';
             this.txtKataSandi.Size = new System.Drawing.Size(312, 35);
             this.txtKataSandi.TabIndex = 4;
             this.txtKataSandi.UseSystemPasswordChar = true;
@@ -708,7 +711,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTechnique;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDesgination;
+        private System.Windows.Forms.TextBox txtDesignation;
         private System.Windows.Forms.Button btnHapusToPD;
         private System.Windows.Forms.Button btnSimpanToPD;
         private System.Windows.Forms.ComboBox cmbZone;

@@ -37,41 +37,26 @@
             this.cmbMaterial = new System.Windows.Forms.ComboBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnResetTangkiTimbun = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.rbtnSumpTrenchTTNo = new System.Windows.Forms.RadioButton();
+            this.rbtnSumpTrenchTTYes = new System.Windows.Forms.RadioButton();
+            this.txtDikeHeight = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDindingTangkiDistance = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtTinggiMaterial = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtDiphatchDistance = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtVentingDistance = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbproduktt = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.chkTangkiTimbun = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.btnResetALL = new System.Windows.Forms.Button();
-            this.btnReverse = new System.Windows.Forms.Button();
-            this.btnSubmitALL = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtDecisionResult = new System.Windows.Forms.TextBox();
-            this.lblToPD = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblClassMST = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblDivisionClass = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.chkTangkiTimbun = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbproduktt = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtVentingDistance = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtDindingTangkiDistance = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtDikeHeight = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtDiphatchDistance = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtTinggiMaterial = new System.Windows.Forms.TextBox();
-            this.rbtnSumpTrenchTTYes = new System.Windows.Forms.RadioButton();
-            this.rbtnSumpTrenchTTNo = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnResetTangkiTimbun = new System.Windows.Forms.Button();
             this.btnResetFillingRTWMT = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -87,8 +72,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.chkFillingRTWMT = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btnResetDermagaMLA = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.rbtnDarat = new System.Windows.Forms.RadioButton();
+            this.rbtnSepanjang = new System.Windows.Forms.RadioButton();
+            this.rbtnBawah = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
             this.rbtnDermagaMLANo = new System.Windows.Forms.RadioButton();
             this.rbtnDermagaMLAYes = new System.Windows.Forms.RadioButton();
@@ -102,16 +92,17 @@
             this.label22 = new System.Windows.Forms.Label();
             this.chkDermagaMLA = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.rbtnBawah = new System.Windows.Forms.RadioButton();
-            this.rbtnSepanjang = new System.Windows.Forms.RadioButton();
-            this.rbtnDarat = new System.Windows.Forms.RadioButton();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.btnResetRumahPompa = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.rbtnLuar = new System.Windows.Forms.RadioButton();
+            this.rbtnDalam = new System.Windows.Forms.RadioButton();
             this.label23 = new System.Windows.Forms.Label();
             this.rbtnRumahPompaNo = new System.Windows.Forms.RadioButton();
             this.rbtnRumahPompaYes = new System.Windows.Forms.RadioButton();
             this.txtCompressorDistance = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.txtVentilasiAtapRumahDistance = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -119,10 +110,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.chkRumahPompa = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.rbtnDalam = new System.Windows.Forms.RadioButton();
-            this.rbtnLuar = new System.Windows.Forms.RadioButton();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.btnResetVenting = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.txtVentingDistance2 = new System.Windows.Forms.TextBox();
@@ -131,6 +119,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.chkVenting = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.btnResetReliefValve = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.txtReliefValveDistance = new System.Windows.Forms.TextBox();
@@ -139,6 +128,17 @@
             this.label29 = new System.Windows.Forms.Label();
             this.chkReliefValve = new System.Windows.Forms.CheckBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnResetALL = new System.Windows.Forms.Button();
+            this.btnReverse = new System.Windows.Forms.Button();
+            this.btnSubmitALL = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtDecisionResult = new System.Windows.Forms.TextBox();
+            this.lblToPD = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblClassMST = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblDivisionClass = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
@@ -150,20 +150,20 @@
             this.groupBox1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer3
@@ -282,6 +282,195 @@
             this.tabPage3.Text = "Tangki Timbun";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnResetTangkiTimbun
+            // 
+            this.btnResetTangkiTimbun.BackColor = System.Drawing.Color.White;
+            this.btnResetTangkiTimbun.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetTangkiTimbun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetTangkiTimbun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetTangkiTimbun.Location = new System.Drawing.Point(610, 6);
+            this.btnResetTangkiTimbun.Name = "btnResetTangkiTimbun";
+            this.btnResetTangkiTimbun.Size = new System.Drawing.Size(37, 28);
+            this.btnResetTangkiTimbun.TabIndex = 3;
+            this.btnResetTangkiTimbun.UseVisualStyleBackColor = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTNo);
+            this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTYes);
+            this.groupBox3.Controls.Add(this.txtDikeHeight);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.txtDindingTangkiDistance);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.txtTinggiMaterial);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.txtDiphatchDistance);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.txtVentingDistance);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.cmbproduktt);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(17, 34);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(630, 221);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Pertanyaan";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 185);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(203, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Berupa sump atau trench di area Tangki?";
+            // 
+            // rbtnSumpTrenchTTNo
+            // 
+            this.rbtnSumpTrenchTTNo.AutoSize = true;
+            this.rbtnSumpTrenchTTNo.Location = new System.Drawing.Point(552, 183);
+            this.rbtnSumpTrenchTTNo.Name = "rbtnSumpTrenchTTNo";
+            this.rbtnSumpTrenchTTNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnSumpTrenchTTNo.TabIndex = 4;
+            this.rbtnSumpTrenchTTNo.TabStop = true;
+            this.rbtnSumpTrenchTTNo.Text = "Tidak";
+            this.rbtnSumpTrenchTTNo.UseVisualStyleBackColor = true;
+            // 
+            // rbtnSumpTrenchTTYes
+            // 
+            this.rbtnSumpTrenchTTYes.AutoSize = true;
+            this.rbtnSumpTrenchTTYes.Location = new System.Drawing.Point(505, 183);
+            this.rbtnSumpTrenchTTYes.Name = "rbtnSumpTrenchTTYes";
+            this.rbtnSumpTrenchTTYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnSumpTrenchTTYes.TabIndex = 4;
+            this.rbtnSumpTrenchTTYes.TabStop = true;
+            this.rbtnSumpTrenchTTYes.Text = "Ya";
+            this.rbtnSumpTrenchTTYes.UseVisualStyleBackColor = true;
+            // 
+            // txtDikeHeight
+            // 
+            this.txtDikeHeight.BackColor = System.Drawing.Color.Yellow;
+            this.txtDikeHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDikeHeight.Location = new System.Drawing.Point(208, 105);
+            this.txtDikeHeight.Name = "txtDikeHeight";
+            this.txtDikeHeight.Size = new System.Drawing.Size(52, 26);
+            this.txtDikeHeight.TabIndex = 3;
+            this.txtDikeHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 110);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Tinggi Dike (m)";
+            // 
+            // txtDindingTangkiDistance
+            // 
+            this.txtDindingTangkiDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtDindingTangkiDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDindingTangkiDistance.Location = new System.Drawing.Point(208, 63);
+            this.txtDindingTangkiDistance.Name = "txtDindingTangkiDistance";
+            this.txtDindingTangkiDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtDindingTangkiDistance.TabIndex = 3;
+            this.txtDindingTangkiDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(140, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Jarak ke Dinding Tangki (m)";
+            // 
+            // txtTinggiMaterial
+            // 
+            this.txtTinggiMaterial.BackColor = System.Drawing.Color.Yellow;
+            this.txtTinggiMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinggiMaterial.Location = new System.Drawing.Point(513, 105);
+            this.txtTinggiMaterial.Name = "txtTinggiMaterial";
+            this.txtTinggiMaterial.Size = new System.Drawing.Size(52, 26);
+            this.txtTinggiMaterial.TabIndex = 3;
+            this.txtTinggiMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(317, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Tinggi Material (m)";
+            // 
+            // txtDiphatchDistance
+            // 
+            this.txtDiphatchDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtDiphatchDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiphatchDistance.Location = new System.Drawing.Point(513, 63);
+            this.txtDiphatchDistance.Name = "txtDiphatchDistance";
+            this.txtDiphatchDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtDiphatchDistance.TabIndex = 3;
+            this.txtDiphatchDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(317, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Jarak Ke Diphatch (m)";
+            // 
+            // txtVentingDistance
+            // 
+            this.txtVentingDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtVentingDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentingDistance.Location = new System.Drawing.Point(513, 23);
+            this.txtVentingDistance.Name = "txtVentingDistance";
+            this.txtVentingDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtVentingDistance.TabIndex = 3;
+            this.txtVentingDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(317, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Jarak Ke Venting(m)";
+            // 
+            // cmbproduktt
+            // 
+            this.cmbproduktt.FormattingEnabled = true;
+            this.cmbproduktt.Location = new System.Drawing.Point(101, 23);
+            this.cmbproduktt.Name = "cmbproduktt";
+            this.cmbproduktt.Size = new System.Drawing.Size(186, 21);
+            this.cmbproduktt.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Produk";
+            // 
+            // chkTangkiTimbun
+            // 
+            this.chkTangkiTimbun.AutoSize = true;
+            this.chkTangkiTimbun.Location = new System.Drawing.Point(8, 11);
+            this.chkTangkiTimbun.Name = "chkTangkiTimbun";
+            this.chkTangkiTimbun.Size = new System.Drawing.Size(55, 17);
+            this.chkTangkiTimbun.TabIndex = 1;
+            this.chkTangkiTimbun.Text = "Dekat";
+            this.chkTangkiTimbun.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(0, 270);
@@ -303,6 +492,160 @@
             this.tabPage4.Text = "Filling RTW/MT";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // btnResetFillingRTWMT
+            // 
+            this.btnResetFillingRTWMT.BackColor = System.Drawing.Color.White;
+            this.btnResetFillingRTWMT.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetFillingRTWMT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetFillingRTWMT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetFillingRTWMT.Location = new System.Drawing.Point(610, 3);
+            this.btnResetFillingRTWMT.Name = "btnResetFillingRTWMT";
+            this.btnResetFillingRTWMT.Size = new System.Drawing.Size(37, 28);
+            this.btnResetFillingRTWMT.TabIndex = 7;
+            this.btnResetFillingRTWMT.UseVisualStyleBackColor = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTNo);
+            this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTYes);
+            this.groupBox4.Controls.Add(this.txtTinggiFillingPointRTW);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.txtMainholePengisian);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.txtTinggiMaterialRTWMT);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.cmbProdukFillingRTWMT);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Location = new System.Drawing.Point(17, 31);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(630, 221);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Pertanyaan";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 185);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(196, 13);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Berupa sump atau trench di area Filling?";
+            // 
+            // rbtnFIllingRTWMTNo
+            // 
+            this.rbtnFIllingRTWMTNo.AutoSize = true;
+            this.rbtnFIllingRTWMTNo.Location = new System.Drawing.Point(540, 185);
+            this.rbtnFIllingRTWMTNo.Name = "rbtnFIllingRTWMTNo";
+            this.rbtnFIllingRTWMTNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnFIllingRTWMTNo.TabIndex = 4;
+            this.rbtnFIllingRTWMTNo.TabStop = true;
+            this.rbtnFIllingRTWMTNo.Text = "Tidak";
+            this.rbtnFIllingRTWMTNo.UseVisualStyleBackColor = true;
+            // 
+            // rbtnFIllingRTWMTYes
+            // 
+            this.rbtnFIllingRTWMTYes.AutoSize = true;
+            this.rbtnFIllingRTWMTYes.Location = new System.Drawing.Point(493, 185);
+            this.rbtnFIllingRTWMTYes.Name = "rbtnFIllingRTWMTYes";
+            this.rbtnFIllingRTWMTYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnFIllingRTWMTYes.TabIndex = 4;
+            this.rbtnFIllingRTWMTYes.TabStop = true;
+            this.rbtnFIllingRTWMTYes.Text = "Ya";
+            this.rbtnFIllingRTWMTYes.UseVisualStyleBackColor = true;
+            // 
+            // txtTinggiFillingPointRTW
+            // 
+            this.txtTinggiFillingPointRTW.BackColor = System.Drawing.Color.Yellow;
+            this.txtTinggiFillingPointRTW.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinggiFillingPointRTW.Location = new System.Drawing.Point(208, 99);
+            this.txtTinggiFillingPointRTW.Name = "txtTinggiFillingPointRTW";
+            this.txtTinggiFillingPointRTW.Size = new System.Drawing.Size(52, 26);
+            this.txtTinggiFillingPointRTW.TabIndex = 3;
+            this.txtTinggiFillingPointRTW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 106);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 13);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Tinggi Mainhole (m)";
+            // 
+            // txtMainholePengisian
+            // 
+            this.txtMainholePengisian.BackColor = System.Drawing.Color.Yellow;
+            this.txtMainholePengisian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMainholePengisian.Location = new System.Drawing.Point(208, 63);
+            this.txtMainholePengisian.Name = "txtMainholePengisian";
+            this.txtMainholePengisian.Size = new System.Drawing.Size(52, 26);
+            this.txtMainholePengisian.TabIndex = 3;
+            this.txtMainholePengisian.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(159, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Jarak ke Mainhole pengisian (m)";
+            // 
+            // txtTinggiMaterialRTWMT
+            // 
+            this.txtTinggiMaterialRTWMT.BackColor = System.Drawing.Color.Yellow;
+            this.txtTinggiMaterialRTWMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinggiMaterialRTWMT.Location = new System.Drawing.Point(208, 136);
+            this.txtTinggiMaterialRTWMT.Name = "txtTinggiMaterialRTWMT";
+            this.txtTinggiMaterialRTWMT.Size = new System.Drawing.Size(52, 26);
+            this.txtTinggiMaterialRTWMT.TabIndex = 3;
+            this.txtTinggiMaterialRTWMT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(13, 144);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Tinggi Material (m)";
+            // 
+            // cmbProdukFillingRTWMT
+            // 
+            this.cmbProdukFillingRTWMT.FormattingEnabled = true;
+            this.cmbProdukFillingRTWMT.Location = new System.Drawing.Point(101, 23);
+            this.cmbProdukFillingRTWMT.Name = "cmbProdukFillingRTWMT";
+            this.cmbProdukFillingRTWMT.Size = new System.Drawing.Size(241, 21);
+            this.cmbProdukFillingRTWMT.TabIndex = 1;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(11, 26);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Produk";
+            // 
+            // chkFillingRTWMT
+            // 
+            this.chkFillingRTWMT.AutoSize = true;
+            this.chkFillingRTWMT.Location = new System.Drawing.Point(8, 8);
+            this.chkFillingRTWMT.Name = "chkFillingRTWMT";
+            this.chkFillingRTWMT.Size = new System.Drawing.Size(55, 17);
+            this.chkFillingRTWMT.TabIndex = 5;
+            this.chkFillingRTWMT.Text = "Dekat";
+            this.chkFillingRTWMT.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 267);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(665, 276);
+            this.panel2.TabIndex = 4;
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.btnResetDermagaMLA);
@@ -316,6 +659,205 @@
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Dermaga dengan MLA";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btnResetDermagaMLA
+            // 
+            this.btnResetDermagaMLA.BackColor = System.Drawing.Color.White;
+            this.btnResetDermagaMLA.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetDermagaMLA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetDermagaMLA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetDermagaMLA.Location = new System.Drawing.Point(610, 3);
+            this.btnResetDermagaMLA.Name = "btnResetDermagaMLA";
+            this.btnResetDermagaMLA.Size = new System.Drawing.Size(37, 28);
+            this.btnResetDermagaMLA.TabIndex = 11;
+            this.btnResetDermagaMLA.UseVisualStyleBackColor = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.groupBox6);
+            this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Controls.Add(this.rbtnDermagaMLANo);
+            this.groupBox5.Controls.Add(this.rbtnDermagaMLAYes);
+            this.groupBox5.Controls.Add(this.txtTinggiDermaga);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.txtJarakdariMLA);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.txtTinggiLMA);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Controls.Add(this.cmbprodukDermagaMLA);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Location = new System.Drawing.Point(17, 31);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(630, 221);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Pertanyaan";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.rbtnDarat);
+            this.groupBox6.Controls.Add(this.rbtnSepanjang);
+            this.groupBox6.Controls.Add(this.rbtnBawah);
+            this.groupBox6.Location = new System.Drawing.Point(15, 60);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(326, 96);
+            this.groupBox6.TabIndex = 6;
+            this.groupBox6.TabStop = false;
+            // 
+            // rbtnDarat
+            // 
+            this.rbtnDarat.AutoSize = true;
+            this.rbtnDarat.Location = new System.Drawing.Point(6, 68);
+            this.rbtnDarat.Name = "rbtnDarat";
+            this.rbtnDarat.Size = new System.Drawing.Size(195, 17);
+            this.rbtnDarat.TabIndex = 2;
+            this.rbtnDarat.TabStop = true;
+            this.rbtnDarat.Text = "Diletakkan mengarah ke Area Darat";
+            this.rbtnDarat.UseVisualStyleBackColor = true;
+            // 
+            // rbtnSepanjang
+            // 
+            this.rbtnSepanjang.AutoSize = true;
+            this.rbtnSepanjang.Location = new System.Drawing.Point(6, 45);
+            this.rbtnSepanjang.Name = "rbtnSepanjang";
+            this.rbtnSepanjang.Size = new System.Drawing.Size(222, 17);
+            this.rbtnSepanjang.TabIndex = 1;
+            this.rbtnSepanjang.TabStop = true;
+            this.rbtnSepanjang.Text = "Diletakkan di sepanjang Pergerakan MLA";
+            this.rbtnSepanjang.UseVisualStyleBackColor = true;
+            // 
+            // rbtnBawah
+            // 
+            this.rbtnBawah.AutoSize = true;
+            this.rbtnBawah.Location = new System.Drawing.Point(6, 19);
+            this.rbtnBawah.Name = "rbtnBawah";
+            this.rbtnBawah.Size = new System.Drawing.Size(193, 17);
+            this.rbtnBawah.TabIndex = 0;
+            this.rbtnBawah.TabStop = true;
+            this.rbtnBawah.Text = "Diletakkan di Area bawah Dermaga";
+            this.rbtnBawah.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 185);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(159, 13);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Berupa sump  di area Dermaga?";
+            // 
+            // rbtnDermagaMLANo
+            // 
+            this.rbtnDermagaMLANo.AutoSize = true;
+            this.rbtnDermagaMLANo.Location = new System.Drawing.Point(540, 185);
+            this.rbtnDermagaMLANo.Name = "rbtnDermagaMLANo";
+            this.rbtnDermagaMLANo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnDermagaMLANo.TabIndex = 4;
+            this.rbtnDermagaMLANo.TabStop = true;
+            this.rbtnDermagaMLANo.Text = "Tidak";
+            this.rbtnDermagaMLANo.UseVisualStyleBackColor = true;
+            // 
+            // rbtnDermagaMLAYes
+            // 
+            this.rbtnDermagaMLAYes.AutoSize = true;
+            this.rbtnDermagaMLAYes.Location = new System.Drawing.Point(493, 185);
+            this.rbtnDermagaMLAYes.Name = "rbtnDermagaMLAYes";
+            this.rbtnDermagaMLAYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnDermagaMLAYes.TabIndex = 4;
+            this.rbtnDermagaMLAYes.TabStop = true;
+            this.rbtnDermagaMLAYes.Text = "Ya";
+            this.rbtnDermagaMLAYes.UseVisualStyleBackColor = true;
+            // 
+            // txtTinggiDermaga
+            // 
+            this.txtTinggiDermaga.BackColor = System.Drawing.Color.Yellow;
+            this.txtTinggiDermaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinggiDermaga.Location = new System.Drawing.Point(552, 96);
+            this.txtTinggiDermaga.Name = "txtTinggiDermaga";
+            this.txtTinggiDermaga.Size = new System.Drawing.Size(52, 26);
+            this.txtTinggiDermaga.TabIndex = 3;
+            this.txtTinggiDermaga.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(356, 103);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(122, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Tinggi  dari Dermaga (m)";
+            // 
+            // txtJarakdariMLA
+            // 
+            this.txtJarakdariMLA.BackColor = System.Drawing.Color.Yellow;
+            this.txtJarakdariMLA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJarakdariMLA.Location = new System.Drawing.Point(552, 60);
+            this.txtJarakdariMLA.Name = "txtJarakdariMLA";
+            this.txtJarakdariMLA.Size = new System.Drawing.Size(52, 26);
+            this.txtJarakdariMLA.TabIndex = 3;
+            this.txtJarakdariMLA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(356, 65);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(95, 13);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Jarak dari MLA (m)";
+            // 
+            // txtTinggiLMA
+            // 
+            this.txtTinggiLMA.BackColor = System.Drawing.Color.Yellow;
+            this.txtTinggiLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinggiLMA.Location = new System.Drawing.Point(552, 133);
+            this.txtTinggiLMA.Name = "txtTinggiLMA";
+            this.txtTinggiLMA.Size = new System.Drawing.Size(52, 26);
+            this.txtTinggiLMA.TabIndex = 3;
+            this.txtTinggiLMA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(357, 141);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(78, 13);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "Tinggi MLA (m)";
+            // 
+            // cmbprodukDermagaMLA
+            // 
+            this.cmbprodukDermagaMLA.FormattingEnabled = true;
+            this.cmbprodukDermagaMLA.Location = new System.Drawing.Point(101, 23);
+            this.cmbprodukDermagaMLA.Name = "cmbprodukDermagaMLA";
+            this.cmbprodukDermagaMLA.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukDermagaMLA.TabIndex = 1;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(11, 26);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Produk";
+            // 
+            // chkDermagaMLA
+            // 
+            this.chkDermagaMLA.AutoSize = true;
+            this.chkDermagaMLA.Location = new System.Drawing.Point(8, 8);
+            this.chkDermagaMLA.Name = "chkDermagaMLA";
+            this.chkDermagaMLA.Size = new System.Drawing.Size(55, 17);
+            this.chkDermagaMLA.TabIndex = 9;
+            this.chkDermagaMLA.Text = "Dekat";
+            this.chkDermagaMLA.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 267);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(665, 276);
+            this.panel3.TabIndex = 8;
             // 
             // tabPage6
             // 
@@ -331,6 +873,182 @@
             this.tabPage6.Text = "Rumah Pompa/Compressor";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // btnResetRumahPompa
+            // 
+            this.btnResetRumahPompa.BackColor = System.Drawing.Color.White;
+            this.btnResetRumahPompa.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetRumahPompa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetRumahPompa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetRumahPompa.Location = new System.Drawing.Point(610, 3);
+            this.btnResetRumahPompa.Name = "btnResetRumahPompa";
+            this.btnResetRumahPompa.Size = new System.Drawing.Size(37, 28);
+            this.btnResetRumahPompa.TabIndex = 15;
+            this.btnResetRumahPompa.UseVisualStyleBackColor = false;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.groupBox8);
+            this.groupBox7.Controls.Add(this.label23);
+            this.groupBox7.Controls.Add(this.rbtnRumahPompaNo);
+            this.groupBox7.Controls.Add(this.rbtnRumahPompaYes);
+            this.groupBox7.Controls.Add(this.txtCompressorDistance);
+            this.groupBox7.Controls.Add(this.label25);
+            this.groupBox7.Controls.Add(this.label24);
+            this.groupBox7.Controls.Add(this.txtVentilasiAtapRumahDistance);
+            this.groupBox7.Controls.Add(this.label26);
+            this.groupBox7.Controls.Add(this.cmbprodukRumahPompa);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Location = new System.Drawing.Point(17, 31);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(630, 221);
+            this.groupBox7.TabIndex = 14;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Pertanyaan";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.rbtnLuar);
+            this.groupBox8.Controls.Add(this.rbtnDalam);
+            this.groupBox8.Location = new System.Drawing.Point(202, 50);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(216, 54);
+            this.groupBox8.TabIndex = 6;
+            this.groupBox8.TabStop = false;
+            // 
+            // rbtnLuar
+            // 
+            this.rbtnLuar.AutoSize = true;
+            this.rbtnLuar.Location = new System.Drawing.Point(138, 21);
+            this.rbtnLuar.Name = "rbtnLuar";
+            this.rbtnLuar.Size = new System.Drawing.Size(46, 17);
+            this.rbtnLuar.TabIndex = 1;
+            this.rbtnLuar.TabStop = true;
+            this.rbtnLuar.Text = "Luar";
+            this.rbtnLuar.UseVisualStyleBackColor = true;
+            // 
+            // rbtnDalam
+            // 
+            this.rbtnDalam.AutoSize = true;
+            this.rbtnDalam.Location = new System.Drawing.Point(39, 21);
+            this.rbtnDalam.Name = "rbtnDalam";
+            this.rbtnDalam.Size = new System.Drawing.Size(55, 17);
+            this.rbtnDalam.TabIndex = 0;
+            this.rbtnDalam.TabStop = true;
+            this.rbtnDalam.Text = "Dalam";
+            this.rbtnDalam.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(11, 194);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(144, 13);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Berupa Sump  atau Trench ?";
+            // 
+            // rbtnRumahPompaNo
+            // 
+            this.rbtnRumahPompaNo.AutoSize = true;
+            this.rbtnRumahPompaNo.Location = new System.Drawing.Point(539, 194);
+            this.rbtnRumahPompaNo.Name = "rbtnRumahPompaNo";
+            this.rbtnRumahPompaNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnRumahPompaNo.TabIndex = 4;
+            this.rbtnRumahPompaNo.TabStop = true;
+            this.rbtnRumahPompaNo.Text = "Tidak";
+            this.rbtnRumahPompaNo.UseVisualStyleBackColor = true;
+            // 
+            // rbtnRumahPompaYes
+            // 
+            this.rbtnRumahPompaYes.AutoSize = true;
+            this.rbtnRumahPompaYes.Location = new System.Drawing.Point(492, 194);
+            this.rbtnRumahPompaYes.Name = "rbtnRumahPompaYes";
+            this.rbtnRumahPompaYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnRumahPompaYes.TabIndex = 4;
+            this.rbtnRumahPompaYes.TabStop = true;
+            this.rbtnRumahPompaYes.Text = "Ya";
+            this.rbtnRumahPompaYes.UseVisualStyleBackColor = true;
+            // 
+            // txtCompressorDistance
+            // 
+            this.txtCompressorDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtCompressorDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompressorDistance.Location = new System.Drawing.Point(202, 110);
+            this.txtCompressorDistance.Name = "txtCompressorDistance";
+            this.txtCompressorDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtCompressorDistance.TabIndex = 3;
+            this.txtCompressorDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(12, 61);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(103, 13);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Peletakan di dinding";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 117);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(162, 13);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Jarak ke pompa/ compressor (m)";
+            // 
+            // txtVentilasiAtapRumahDistance
+            // 
+            this.txtVentilasiAtapRumahDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtVentilasiAtapRumahDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilasiAtapRumahDistance.Location = new System.Drawing.Point(202, 147);
+            this.txtVentilasiAtapRumahDistance.Name = "txtVentilasiAtapRumahDistance";
+            this.txtVentilasiAtapRumahDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtVentilasiAtapRumahDistance.TabIndex = 3;
+            this.txtVentilasiAtapRumahDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(5, 153);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(134, 13);
+            this.label26.TabIndex = 2;
+            this.label26.Text = " Jarak ke Ventilasi atap (m)";
+            // 
+            // cmbprodukRumahPompa
+            // 
+            this.cmbprodukRumahPompa.FormattingEnabled = true;
+            this.cmbprodukRumahPompa.Location = new System.Drawing.Point(101, 23);
+            this.cmbprodukRumahPompa.Name = "cmbprodukRumahPompa";
+            this.cmbprodukRumahPompa.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukRumahPompa.TabIndex = 1;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(11, 26);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(41, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Produk";
+            // 
+            // chkRumahPompa
+            // 
+            this.chkRumahPompa.AutoSize = true;
+            this.chkRumahPompa.Location = new System.Drawing.Point(8, 8);
+            this.chkRumahPompa.Name = "chkRumahPompa";
+            this.chkRumahPompa.Size = new System.Drawing.Size(55, 17);
+            this.chkRumahPompa.TabIndex = 13;
+            this.chkRumahPompa.Text = "Dekat";
+            this.chkRumahPompa.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(0, 267);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(665, 276);
+            this.panel4.TabIndex = 12;
+            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.btnResetVenting);
@@ -344,6 +1062,84 @@
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Venting";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // btnResetVenting
+            // 
+            this.btnResetVenting.BackColor = System.Drawing.Color.White;
+            this.btnResetVenting.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetVenting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetVenting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetVenting.Location = new System.Drawing.Point(610, 3);
+            this.btnResetVenting.Name = "btnResetVenting";
+            this.btnResetVenting.Size = new System.Drawing.Size(37, 28);
+            this.btnResetVenting.TabIndex = 19;
+            this.btnResetVenting.UseVisualStyleBackColor = false;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.txtVentingDistance2);
+            this.groupBox9.Controls.Add(this.label30);
+            this.groupBox9.Controls.Add(this.cmbprodukVenting);
+            this.groupBox9.Controls.Add(this.label32);
+            this.groupBox9.Location = new System.Drawing.Point(17, 31);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(630, 221);
+            this.groupBox9.TabIndex = 18;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Pertanyaan";
+            // 
+            // txtVentingDistance2
+            // 
+            this.txtVentingDistance2.BackColor = System.Drawing.Color.Yellow;
+            this.txtVentingDistance2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentingDistance2.Location = new System.Drawing.Point(552, 75);
+            this.txtVentingDistance2.Name = "txtVentingDistance2";
+            this.txtVentingDistance2.Size = new System.Drawing.Size(52, 26);
+            this.txtVentingDistance2.TabIndex = 3;
+            this.txtVentingDistance2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(11, 88);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(106, 13);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Jarak ke venting  (m)";
+            // 
+            // cmbprodukVenting
+            // 
+            this.cmbprodukVenting.FormattingEnabled = true;
+            this.cmbprodukVenting.Location = new System.Drawing.Point(101, 23);
+            this.cmbprodukVenting.Name = "cmbprodukVenting";
+            this.cmbprodukVenting.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukVenting.TabIndex = 1;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(11, 26);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Produk";
+            // 
+            // chkVenting
+            // 
+            this.chkVenting.AutoSize = true;
+            this.chkVenting.Location = new System.Drawing.Point(8, 8);
+            this.chkVenting.Name = "chkVenting";
+            this.chkVenting.Size = new System.Drawing.Size(55, 17);
+            this.chkVenting.TabIndex = 17;
+            this.chkVenting.Text = "Dekat";
+            this.chkVenting.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(0, 267);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(665, 276);
+            this.panel5.TabIndex = 16;
             // 
             // tabPage8
             // 
@@ -359,6 +1155,84 @@
             this.tabPage8.Text = "Relief Valve";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // btnResetReliefValve
+            // 
+            this.btnResetReliefValve.BackColor = System.Drawing.Color.White;
+            this.btnResetReliefValve.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
+            this.btnResetReliefValve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnResetReliefValve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetReliefValve.Location = new System.Drawing.Point(610, 3);
+            this.btnResetReliefValve.Name = "btnResetReliefValve";
+            this.btnResetReliefValve.Size = new System.Drawing.Size(37, 28);
+            this.btnResetReliefValve.TabIndex = 23;
+            this.btnResetReliefValve.UseVisualStyleBackColor = false;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.txtReliefValveDistance);
+            this.groupBox10.Controls.Add(this.label28);
+            this.groupBox10.Controls.Add(this.cmbprodukReliefValve);
+            this.groupBox10.Controls.Add(this.label29);
+            this.groupBox10.Location = new System.Drawing.Point(17, 31);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(630, 221);
+            this.groupBox10.TabIndex = 22;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Pertanyaan";
+            // 
+            // txtReliefValveDistance
+            // 
+            this.txtReliefValveDistance.BackColor = System.Drawing.Color.Yellow;
+            this.txtReliefValveDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReliefValveDistance.Location = new System.Drawing.Point(552, 75);
+            this.txtReliefValveDistance.Name = "txtReliefValveDistance";
+            this.txtReliefValveDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtReliefValveDistance.TabIndex = 3;
+            this.txtReliefValveDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(11, 88);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(122, 13);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Jarak ke relief valve  (m)";
+            // 
+            // cmbprodukReliefValve
+            // 
+            this.cmbprodukReliefValve.FormattingEnabled = true;
+            this.cmbprodukReliefValve.Location = new System.Drawing.Point(101, 23);
+            this.cmbprodukReliefValve.Name = "cmbprodukReliefValve";
+            this.cmbprodukReliefValve.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukReliefValve.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(11, 26);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(41, 13);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Produk";
+            // 
+            // chkReliefValve
+            // 
+            this.chkReliefValve.AutoSize = true;
+            this.chkReliefValve.Location = new System.Drawing.Point(8, 8);
+            this.chkReliefValve.Name = "chkReliefValve";
+            this.chkReliefValve.Size = new System.Drawing.Size(55, 17);
+            this.chkReliefValve.TabIndex = 21;
+            this.chkReliefValve.Text = "Dekat";
+            this.chkReliefValve.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(0, 267);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(665, 276);
+            this.panel6.TabIndex = 20;
+            // 
             // btnResetALL
             // 
             this.btnResetALL.BackColor = System.Drawing.Color.White;
@@ -373,6 +1247,7 @@
             this.btnResetALL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnResetALL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnResetALL.UseVisualStyleBackColor = false;
+            this.btnResetALL.Click += new System.EventHandler(this.btnResetALL_Click);
             // 
             // btnReverse
             // 
@@ -483,865 +1358,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Division / Class";
             // 
-            // chkTangkiTimbun
-            // 
-            this.chkTangkiTimbun.AutoSize = true;
-            this.chkTangkiTimbun.Location = new System.Drawing.Point(8, 11);
-            this.chkTangkiTimbun.Name = "chkTangkiTimbun";
-            this.chkTangkiTimbun.Size = new System.Drawing.Size(55, 17);
-            this.chkTangkiTimbun.TabIndex = 1;
-            this.chkTangkiTimbun.Text = "Dekat";
-            this.chkTangkiTimbun.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTNo);
-            this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTYes);
-            this.groupBox3.Controls.Add(this.txtDikeHeight);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.txtDindingTangkiDistance);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtTinggiMaterial);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.txtDiphatchDistance);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.txtVentingDistance);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.cmbproduktt);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(17, 34);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(630, 221);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pertanyaan";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Produk";
-            // 
-            // cmbproduktt
-            // 
-            this.cmbproduktt.FormattingEnabled = true;
-            this.cmbproduktt.Location = new System.Drawing.Point(101, 23);
-            this.cmbproduktt.Name = "cmbproduktt";
-            this.cmbproduktt.Size = new System.Drawing.Size(186, 21);
-            this.cmbproduktt.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(317, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Jarak Ke Venting(m)";
-            // 
-            // txtVentingDistance
-            // 
-            this.txtVentingDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtVentingDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentingDistance.Location = new System.Drawing.Point(513, 23);
-            this.txtVentingDistance.Name = "txtVentingDistance";
-            this.txtVentingDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtVentingDistance.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Jarak ke Dinding Tangki (m)";
-            // 
-            // txtDindingTangkiDistance
-            // 
-            this.txtDindingTangkiDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtDindingTangkiDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDindingTangkiDistance.Location = new System.Drawing.Point(208, 63);
-            this.txtDindingTangkiDistance.Name = "txtDindingTangkiDistance";
-            this.txtDindingTangkiDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtDindingTangkiDistance.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 110);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Tinggi Dike (m)";
-            // 
-            // txtDikeHeight
-            // 
-            this.txtDikeHeight.BackColor = System.Drawing.Color.Yellow;
-            this.txtDikeHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDikeHeight.Location = new System.Drawing.Point(208, 105);
-            this.txtDikeHeight.Name = "txtDikeHeight";
-            this.txtDikeHeight.Size = new System.Drawing.Size(52, 26);
-            this.txtDikeHeight.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(317, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Jarak Ke Diphatch (m)";
-            // 
-            // txtDiphatchDistance
-            // 
-            this.txtDiphatchDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtDiphatchDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiphatchDistance.Location = new System.Drawing.Point(513, 63);
-            this.txtDiphatchDistance.Name = "txtDiphatchDistance";
-            this.txtDiphatchDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtDiphatchDistance.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(317, 110);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Tinggi Material (m)";
-            // 
-            // txtTinggiMaterial
-            // 
-            this.txtTinggiMaterial.BackColor = System.Drawing.Color.Yellow;
-            this.txtTinggiMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiMaterial.Location = new System.Drawing.Point(513, 105);
-            this.txtTinggiMaterial.Name = "txtTinggiMaterial";
-            this.txtTinggiMaterial.Size = new System.Drawing.Size(52, 26);
-            this.txtTinggiMaterial.TabIndex = 3;
-            // 
-            // rbtnSumpTrenchTTYes
-            // 
-            this.rbtnSumpTrenchTTYes.AutoSize = true;
-            this.rbtnSumpTrenchTTYes.Location = new System.Drawing.Point(505, 183);
-            this.rbtnSumpTrenchTTYes.Name = "rbtnSumpTrenchTTYes";
-            this.rbtnSumpTrenchTTYes.Size = new System.Drawing.Size(38, 17);
-            this.rbtnSumpTrenchTTYes.TabIndex = 4;
-            this.rbtnSumpTrenchTTYes.TabStop = true;
-            this.rbtnSumpTrenchTTYes.Text = "Ya";
-            this.rbtnSumpTrenchTTYes.UseVisualStyleBackColor = true;
-            // 
-            // rbtnSumpTrenchTTNo
-            // 
-            this.rbtnSumpTrenchTTNo.AutoSize = true;
-            this.rbtnSumpTrenchTTNo.Location = new System.Drawing.Point(552, 183);
-            this.rbtnSumpTrenchTTNo.Name = "rbtnSumpTrenchTTNo";
-            this.rbtnSumpTrenchTTNo.Size = new System.Drawing.Size(52, 17);
-            this.rbtnSumpTrenchTTNo.TabIndex = 4;
-            this.rbtnSumpTrenchTTNo.TabStop = true;
-            this.rbtnSumpTrenchTTNo.Text = "Tidak";
-            this.rbtnSumpTrenchTTNo.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 185);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(203, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Berupa sump atau trench di area Tangki?";
-            // 
-            // btnResetTangkiTimbun
-            // 
-            this.btnResetTangkiTimbun.BackColor = System.Drawing.Color.White;
-            this.btnResetTangkiTimbun.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetTangkiTimbun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetTangkiTimbun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetTangkiTimbun.Location = new System.Drawing.Point(610, 6);
-            this.btnResetTangkiTimbun.Name = "btnResetTangkiTimbun";
-            this.btnResetTangkiTimbun.Size = new System.Drawing.Size(37, 28);
-            this.btnResetTangkiTimbun.TabIndex = 3;
-            this.btnResetTangkiTimbun.UseVisualStyleBackColor = false;
-            // 
-            // btnResetFillingRTWMT
-            // 
-            this.btnResetFillingRTWMT.BackColor = System.Drawing.Color.White;
-            this.btnResetFillingRTWMT.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetFillingRTWMT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetFillingRTWMT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetFillingRTWMT.Location = new System.Drawing.Point(610, 3);
-            this.btnResetFillingRTWMT.Name = "btnResetFillingRTWMT";
-            this.btnResetFillingRTWMT.Size = new System.Drawing.Size(37, 28);
-            this.btnResetFillingRTWMT.TabIndex = 7;
-            this.btnResetFillingRTWMT.UseVisualStyleBackColor = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTNo);
-            this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTYes);
-            this.groupBox4.Controls.Add(this.txtTinggiFillingPointRTW);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.txtMainholePengisian);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.txtTinggiMaterialRTWMT);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.cmbProdukFillingRTWMT);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Location = new System.Drawing.Point(17, 31);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(630, 221);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Pertanyaan";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(12, 185);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(196, 13);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Berupa sump atau trench di area Filling?";
-            // 
-            // rbtnFIllingRTWMTNo
-            // 
-            this.rbtnFIllingRTWMTNo.AutoSize = true;
-            this.rbtnFIllingRTWMTNo.Location = new System.Drawing.Point(540, 185);
-            this.rbtnFIllingRTWMTNo.Name = "rbtnFIllingRTWMTNo";
-            this.rbtnFIllingRTWMTNo.Size = new System.Drawing.Size(52, 17);
-            this.rbtnFIllingRTWMTNo.TabIndex = 4;
-            this.rbtnFIllingRTWMTNo.TabStop = true;
-            this.rbtnFIllingRTWMTNo.Text = "Tidak";
-            this.rbtnFIllingRTWMTNo.UseVisualStyleBackColor = true;
-            // 
-            // rbtnFIllingRTWMTYes
-            // 
-            this.rbtnFIllingRTWMTYes.AutoSize = true;
-            this.rbtnFIllingRTWMTYes.Location = new System.Drawing.Point(493, 185);
-            this.rbtnFIllingRTWMTYes.Name = "rbtnFIllingRTWMTYes";
-            this.rbtnFIllingRTWMTYes.Size = new System.Drawing.Size(38, 17);
-            this.rbtnFIllingRTWMTYes.TabIndex = 4;
-            this.rbtnFIllingRTWMTYes.TabStop = true;
-            this.rbtnFIllingRTWMTYes.Text = "Ya";
-            this.rbtnFIllingRTWMTYes.UseVisualStyleBackColor = true;
-            // 
-            // txtTinggiFillingPointRTW
-            // 
-            this.txtTinggiFillingPointRTW.BackColor = System.Drawing.Color.Yellow;
-            this.txtTinggiFillingPointRTW.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiFillingPointRTW.Location = new System.Drawing.Point(208, 99);
-            this.txtTinggiFillingPointRTW.Name = "txtTinggiFillingPointRTW";
-            this.txtTinggiFillingPointRTW.Size = new System.Drawing.Size(52, 26);
-            this.txtTinggiFillingPointRTW.TabIndex = 3;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(12, 106);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 13);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Tinggi Mainhole (m)";
-            // 
-            // txtMainholePengisian
-            // 
-            this.txtMainholePengisian.BackColor = System.Drawing.Color.Yellow;
-            this.txtMainholePengisian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainholePengisian.Location = new System.Drawing.Point(208, 63);
-            this.txtMainholePengisian.Name = "txtMainholePengisian";
-            this.txtMainholePengisian.Size = new System.Drawing.Size(52, 26);
-            this.txtMainholePengisian.TabIndex = 3;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(12, 68);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Jarak ke Mainhole pengisian (m)";
-            // 
-            // txtTinggiMaterialRTWMT
-            // 
-            this.txtTinggiMaterialRTWMT.BackColor = System.Drawing.Color.Yellow;
-            this.txtTinggiMaterialRTWMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiMaterialRTWMT.Location = new System.Drawing.Point(208, 136);
-            this.txtTinggiMaterialRTWMT.Name = "txtTinggiMaterialRTWMT";
-            this.txtTinggiMaterialRTWMT.Size = new System.Drawing.Size(52, 26);
-            this.txtTinggiMaterialRTWMT.TabIndex = 3;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 144);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Tinggi Material (m)";
-            // 
-            // cmbProdukFillingRTWMT
-            // 
-            this.cmbProdukFillingRTWMT.FormattingEnabled = true;
-            this.cmbProdukFillingRTWMT.Location = new System.Drawing.Point(101, 23);
-            this.cmbProdukFillingRTWMT.Name = "cmbProdukFillingRTWMT";
-            this.cmbProdukFillingRTWMT.Size = new System.Drawing.Size(241, 21);
-            this.cmbProdukFillingRTWMT.TabIndex = 1;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(11, 26);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Produk";
-            // 
-            // chkFillingRTWMT
-            // 
-            this.chkFillingRTWMT.AutoSize = true;
-            this.chkFillingRTWMT.Location = new System.Drawing.Point(8, 8);
-            this.chkFillingRTWMT.Name = "chkFillingRTWMT";
-            this.chkFillingRTWMT.Size = new System.Drawing.Size(55, 17);
-            this.chkFillingRTWMT.TabIndex = 5;
-            this.chkFillingRTWMT.Text = "Dekat";
-            this.chkFillingRTWMT.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(0, 267);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(665, 276);
-            this.panel2.TabIndex = 4;
-            // 
-            // btnResetDermagaMLA
-            // 
-            this.btnResetDermagaMLA.BackColor = System.Drawing.Color.White;
-            this.btnResetDermagaMLA.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetDermagaMLA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetDermagaMLA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetDermagaMLA.Location = new System.Drawing.Point(610, 3);
-            this.btnResetDermagaMLA.Name = "btnResetDermagaMLA";
-            this.btnResetDermagaMLA.Size = new System.Drawing.Size(37, 28);
-            this.btnResetDermagaMLA.TabIndex = 11;
-            this.btnResetDermagaMLA.UseVisualStyleBackColor = false;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.rbtnDermagaMLANo);
-            this.groupBox5.Controls.Add(this.rbtnDermagaMLAYes);
-            this.groupBox5.Controls.Add(this.txtTinggiDermaga);
-            this.groupBox5.Controls.Add(this.label18);
-            this.groupBox5.Controls.Add(this.txtJarakdariMLA);
-            this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.txtTinggiLMA);
-            this.groupBox5.Controls.Add(this.label21);
-            this.groupBox5.Controls.Add(this.cmbprodukDermagaMLA);
-            this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Location = new System.Drawing.Point(17, 31);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(630, 221);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Pertanyaan";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(12, 185);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(159, 13);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Berupa sump  di area Dermaga?";
-            // 
-            // rbtnDermagaMLANo
-            // 
-            this.rbtnDermagaMLANo.AutoSize = true;
-            this.rbtnDermagaMLANo.Location = new System.Drawing.Point(540, 185);
-            this.rbtnDermagaMLANo.Name = "rbtnDermagaMLANo";
-            this.rbtnDermagaMLANo.Size = new System.Drawing.Size(52, 17);
-            this.rbtnDermagaMLANo.TabIndex = 4;
-            this.rbtnDermagaMLANo.TabStop = true;
-            this.rbtnDermagaMLANo.Text = "Tidak";
-            this.rbtnDermagaMLANo.UseVisualStyleBackColor = true;
-            // 
-            // rbtnDermagaMLAYes
-            // 
-            this.rbtnDermagaMLAYes.AutoSize = true;
-            this.rbtnDermagaMLAYes.Location = new System.Drawing.Point(493, 185);
-            this.rbtnDermagaMLAYes.Name = "rbtnDermagaMLAYes";
-            this.rbtnDermagaMLAYes.Size = new System.Drawing.Size(38, 17);
-            this.rbtnDermagaMLAYes.TabIndex = 4;
-            this.rbtnDermagaMLAYes.TabStop = true;
-            this.rbtnDermagaMLAYes.Text = "Ya";
-            this.rbtnDermagaMLAYes.UseVisualStyleBackColor = true;
-            // 
-            // txtTinggiDermaga
-            // 
-            this.txtTinggiDermaga.BackColor = System.Drawing.Color.Yellow;
-            this.txtTinggiDermaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiDermaga.Location = new System.Drawing.Point(552, 96);
-            this.txtTinggiDermaga.Name = "txtTinggiDermaga";
-            this.txtTinggiDermaga.Size = new System.Drawing.Size(52, 26);
-            this.txtTinggiDermaga.TabIndex = 3;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(356, 103);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(122, 13);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Tinggi  dari Dermaga (m)";
-            // 
-            // txtJarakdariMLA
-            // 
-            this.txtJarakdariMLA.BackColor = System.Drawing.Color.Yellow;
-            this.txtJarakdariMLA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJarakdariMLA.Location = new System.Drawing.Point(552, 60);
-            this.txtJarakdariMLA.Name = "txtJarakdariMLA";
-            this.txtJarakdariMLA.Size = new System.Drawing.Size(52, 26);
-            this.txtJarakdariMLA.TabIndex = 3;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(356, 65);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 13);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Jarak dari MLA (m)";
-            // 
-            // txtTinggiLMA
-            // 
-            this.txtTinggiLMA.BackColor = System.Drawing.Color.Yellow;
-            this.txtTinggiLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiLMA.Location = new System.Drawing.Point(552, 133);
-            this.txtTinggiLMA.Name = "txtTinggiLMA";
-            this.txtTinggiLMA.Size = new System.Drawing.Size(52, 26);
-            this.txtTinggiLMA.TabIndex = 3;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(357, 141);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 13);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Tinggi MLA (m)";
-            // 
-            // cmbprodukDermagaMLA
-            // 
-            this.cmbprodukDermagaMLA.FormattingEnabled = true;
-            this.cmbprodukDermagaMLA.Location = new System.Drawing.Point(101, 23);
-            this.cmbprodukDermagaMLA.Name = "cmbprodukDermagaMLA";
-            this.cmbprodukDermagaMLA.Size = new System.Drawing.Size(241, 21);
-            this.cmbprodukDermagaMLA.TabIndex = 1;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 26);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Produk";
-            // 
-            // chkDermagaMLA
-            // 
-            this.chkDermagaMLA.AutoSize = true;
-            this.chkDermagaMLA.Location = new System.Drawing.Point(8, 8);
-            this.chkDermagaMLA.Name = "chkDermagaMLA";
-            this.chkDermagaMLA.Size = new System.Drawing.Size(55, 17);
-            this.chkDermagaMLA.TabIndex = 9;
-            this.chkDermagaMLA.Text = "Dekat";
-            this.chkDermagaMLA.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 267);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(665, 276);
-            this.panel3.TabIndex = 8;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.rbtnDarat);
-            this.groupBox6.Controls.Add(this.rbtnSepanjang);
-            this.groupBox6.Controls.Add(this.rbtnBawah);
-            this.groupBox6.Location = new System.Drawing.Point(15, 60);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(326, 96);
-            this.groupBox6.TabIndex = 6;
-            this.groupBox6.TabStop = false;
-            // 
-            // rbtnBawah
-            // 
-            this.rbtnBawah.AutoSize = true;
-            this.rbtnBawah.Location = new System.Drawing.Point(6, 19);
-            this.rbtnBawah.Name = "rbtnBawah";
-            this.rbtnBawah.Size = new System.Drawing.Size(193, 17);
-            this.rbtnBawah.TabIndex = 0;
-            this.rbtnBawah.TabStop = true;
-            this.rbtnBawah.Text = "Diletakkan di Area bawah Dermaga";
-            this.rbtnBawah.UseVisualStyleBackColor = true;
-            // 
-            // rbtnSepanjang
-            // 
-            this.rbtnSepanjang.AutoSize = true;
-            this.rbtnSepanjang.Location = new System.Drawing.Point(6, 45);
-            this.rbtnSepanjang.Name = "rbtnSepanjang";
-            this.rbtnSepanjang.Size = new System.Drawing.Size(222, 17);
-            this.rbtnSepanjang.TabIndex = 1;
-            this.rbtnSepanjang.TabStop = true;
-            this.rbtnSepanjang.Text = "Diletakkan di sepanjang Pergerakan MLA";
-            this.rbtnSepanjang.UseVisualStyleBackColor = true;
-            // 
-            // rbtnDarat
-            // 
-            this.rbtnDarat.AutoSize = true;
-            this.rbtnDarat.Location = new System.Drawing.Point(6, 68);
-            this.rbtnDarat.Name = "rbtnDarat";
-            this.rbtnDarat.Size = new System.Drawing.Size(195, 17);
-            this.rbtnDarat.TabIndex = 2;
-            this.rbtnDarat.TabStop = true;
-            this.rbtnDarat.Text = "Diletakkan mengarah ke Area Darat";
-            this.rbtnDarat.UseVisualStyleBackColor = true;
-            // 
-            // btnResetRumahPompa
-            // 
-            this.btnResetRumahPompa.BackColor = System.Drawing.Color.White;
-            this.btnResetRumahPompa.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetRumahPompa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetRumahPompa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetRumahPompa.Location = new System.Drawing.Point(610, 3);
-            this.btnResetRumahPompa.Name = "btnResetRumahPompa";
-            this.btnResetRumahPompa.Size = new System.Drawing.Size(37, 28);
-            this.btnResetRumahPompa.TabIndex = 15;
-            this.btnResetRumahPompa.UseVisualStyleBackColor = false;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.groupBox8);
-            this.groupBox7.Controls.Add(this.label23);
-            this.groupBox7.Controls.Add(this.rbtnRumahPompaNo);
-            this.groupBox7.Controls.Add(this.rbtnRumahPompaYes);
-            this.groupBox7.Controls.Add(this.txtCompressorDistance);
-            this.groupBox7.Controls.Add(this.label25);
-            this.groupBox7.Controls.Add(this.label24);
-            this.groupBox7.Controls.Add(this.txtVentilasiAtapRumahDistance);
-            this.groupBox7.Controls.Add(this.label26);
-            this.groupBox7.Controls.Add(this.cmbprodukRumahPompa);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Location = new System.Drawing.Point(17, 31);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(630, 221);
-            this.groupBox7.TabIndex = 14;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Pertanyaan";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 194);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(144, 13);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "Berupa Sump  atau Trench ?";
-            // 
-            // rbtnRumahPompaNo
-            // 
-            this.rbtnRumahPompaNo.AutoSize = true;
-            this.rbtnRumahPompaNo.Location = new System.Drawing.Point(539, 194);
-            this.rbtnRumahPompaNo.Name = "rbtnRumahPompaNo";
-            this.rbtnRumahPompaNo.Size = new System.Drawing.Size(52, 17);
-            this.rbtnRumahPompaNo.TabIndex = 4;
-            this.rbtnRumahPompaNo.TabStop = true;
-            this.rbtnRumahPompaNo.Text = "Tidak";
-            this.rbtnRumahPompaNo.UseVisualStyleBackColor = true;
-            // 
-            // rbtnRumahPompaYes
-            // 
-            this.rbtnRumahPompaYes.AutoSize = true;
-            this.rbtnRumahPompaYes.Location = new System.Drawing.Point(492, 194);
-            this.rbtnRumahPompaYes.Name = "rbtnRumahPompaYes";
-            this.rbtnRumahPompaYes.Size = new System.Drawing.Size(38, 17);
-            this.rbtnRumahPompaYes.TabIndex = 4;
-            this.rbtnRumahPompaYes.TabStop = true;
-            this.rbtnRumahPompaYes.Text = "Ya";
-            this.rbtnRumahPompaYes.UseVisualStyleBackColor = true;
-            // 
-            // txtCompressorDistance
-            // 
-            this.txtCompressorDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtCompressorDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompressorDistance.Location = new System.Drawing.Point(202, 110);
-            this.txtCompressorDistance.Name = "txtCompressorDistance";
-            this.txtCompressorDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtCompressorDistance.TabIndex = 3;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 117);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(162, 13);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Jarak ke pompa/ compressor (m)";
-            // 
-            // txtVentilasiAtapRumahDistance
-            // 
-            this.txtVentilasiAtapRumahDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtVentilasiAtapRumahDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentilasiAtapRumahDistance.Location = new System.Drawing.Point(202, 147);
-            this.txtVentilasiAtapRumahDistance.Name = "txtVentilasiAtapRumahDistance";
-            this.txtVentilasiAtapRumahDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtVentilasiAtapRumahDistance.TabIndex = 3;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(5, 153);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(134, 13);
-            this.label26.TabIndex = 2;
-            this.label26.Text = " Jarak ke Ventilasi atap (m)";
-            // 
-            // cmbprodukRumahPompa
-            // 
-            this.cmbprodukRumahPompa.FormattingEnabled = true;
-            this.cmbprodukRumahPompa.Location = new System.Drawing.Point(101, 23);
-            this.cmbprodukRumahPompa.Name = "cmbprodukRumahPompa";
-            this.cmbprodukRumahPompa.Size = new System.Drawing.Size(241, 21);
-            this.cmbprodukRumahPompa.TabIndex = 1;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(11, 26);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 13);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Produk";
-            // 
-            // chkRumahPompa
-            // 
-            this.chkRumahPompa.AutoSize = true;
-            this.chkRumahPompa.Location = new System.Drawing.Point(8, 8);
-            this.chkRumahPompa.Name = "chkRumahPompa";
-            this.chkRumahPompa.Size = new System.Drawing.Size(55, 17);
-            this.chkRumahPompa.TabIndex = 13;
-            this.chkRumahPompa.Text = "Dekat";
-            this.chkRumahPompa.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(0, 267);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(665, 276);
-            this.panel4.TabIndex = 12;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(12, 61);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 13);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Peletakan di dinding";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.rbtnLuar);
-            this.groupBox8.Controls.Add(this.rbtnDalam);
-            this.groupBox8.Location = new System.Drawing.Point(202, 50);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(216, 54);
-            this.groupBox8.TabIndex = 6;
-            this.groupBox8.TabStop = false;
-            // 
-            // rbtnDalam
-            // 
-            this.rbtnDalam.AutoSize = true;
-            this.rbtnDalam.Location = new System.Drawing.Point(39, 21);
-            this.rbtnDalam.Name = "rbtnDalam";
-            this.rbtnDalam.Size = new System.Drawing.Size(55, 17);
-            this.rbtnDalam.TabIndex = 0;
-            this.rbtnDalam.TabStop = true;
-            this.rbtnDalam.Text = "Dalam";
-            this.rbtnDalam.UseVisualStyleBackColor = true;
-            // 
-            // rbtnLuar
-            // 
-            this.rbtnLuar.AutoSize = true;
-            this.rbtnLuar.Location = new System.Drawing.Point(138, 21);
-            this.rbtnLuar.Name = "rbtnLuar";
-            this.rbtnLuar.Size = new System.Drawing.Size(46, 17);
-            this.rbtnLuar.TabIndex = 1;
-            this.rbtnLuar.TabStop = true;
-            this.rbtnLuar.Text = "Luar";
-            this.rbtnLuar.UseVisualStyleBackColor = true;
-            // 
-            // btnResetVenting
-            // 
-            this.btnResetVenting.BackColor = System.Drawing.Color.White;
-            this.btnResetVenting.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetVenting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetVenting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetVenting.Location = new System.Drawing.Point(610, 3);
-            this.btnResetVenting.Name = "btnResetVenting";
-            this.btnResetVenting.Size = new System.Drawing.Size(37, 28);
-            this.btnResetVenting.TabIndex = 19;
-            this.btnResetVenting.UseVisualStyleBackColor = false;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.txtVentingDistance2);
-            this.groupBox9.Controls.Add(this.label30);
-            this.groupBox9.Controls.Add(this.cmbprodukVenting);
-            this.groupBox9.Controls.Add(this.label32);
-            this.groupBox9.Location = new System.Drawing.Point(17, 31);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(630, 221);
-            this.groupBox9.TabIndex = 18;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Pertanyaan";
-            // 
-            // txtVentingDistance2
-            // 
-            this.txtVentingDistance2.BackColor = System.Drawing.Color.Yellow;
-            this.txtVentingDistance2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentingDistance2.Location = new System.Drawing.Point(552, 75);
-            this.txtVentingDistance2.Name = "txtVentingDistance2";
-            this.txtVentingDistance2.Size = new System.Drawing.Size(52, 26);
-            this.txtVentingDistance2.TabIndex = 3;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(11, 88);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(106, 13);
-            this.label30.TabIndex = 2;
-            this.label30.Text = "Jarak ke venting  (m)";
-            // 
-            // cmbprodukVenting
-            // 
-            this.cmbprodukVenting.FormattingEnabled = true;
-            this.cmbprodukVenting.Location = new System.Drawing.Point(101, 23);
-            this.cmbprodukVenting.Name = "cmbprodukVenting";
-            this.cmbprodukVenting.Size = new System.Drawing.Size(241, 21);
-            this.cmbprodukVenting.TabIndex = 1;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(11, 26);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "Produk";
-            // 
-            // chkVenting
-            // 
-            this.chkVenting.AutoSize = true;
-            this.chkVenting.Location = new System.Drawing.Point(8, 8);
-            this.chkVenting.Name = "chkVenting";
-            this.chkVenting.Size = new System.Drawing.Size(55, 17);
-            this.chkVenting.TabIndex = 17;
-            this.chkVenting.Text = "Dekat";
-            this.chkVenting.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(0, 267);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(665, 276);
-            this.panel5.TabIndex = 16;
-            // 
-            // btnResetReliefValve
-            // 
-            this.btnResetReliefValve.BackColor = System.Drawing.Color.White;
-            this.btnResetReliefValve.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
-            this.btnResetReliefValve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnResetReliefValve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetReliefValve.Location = new System.Drawing.Point(610, 3);
-            this.btnResetReliefValve.Name = "btnResetReliefValve";
-            this.btnResetReliefValve.Size = new System.Drawing.Size(37, 28);
-            this.btnResetReliefValve.TabIndex = 23;
-            this.btnResetReliefValve.UseVisualStyleBackColor = false;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.txtReliefValveDistance);
-            this.groupBox10.Controls.Add(this.label28);
-            this.groupBox10.Controls.Add(this.cmbprodukReliefValve);
-            this.groupBox10.Controls.Add(this.label29);
-            this.groupBox10.Location = new System.Drawing.Point(17, 31);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(630, 221);
-            this.groupBox10.TabIndex = 22;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Pertanyaan";
-            // 
-            // txtReliefValveDistance
-            // 
-            this.txtReliefValveDistance.BackColor = System.Drawing.Color.Yellow;
-            this.txtReliefValveDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReliefValveDistance.Location = new System.Drawing.Point(552, 75);
-            this.txtReliefValveDistance.Name = "txtReliefValveDistance";
-            this.txtReliefValveDistance.Size = new System.Drawing.Size(52, 26);
-            this.txtReliefValveDistance.TabIndex = 3;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 88);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(122, 13);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "Jarak ke relief valve  (m)";
-            // 
-            // cmbprodukReliefValve
-            // 
-            this.cmbprodukReliefValve.FormattingEnabled = true;
-            this.cmbprodukReliefValve.Location = new System.Drawing.Point(101, 23);
-            this.cmbprodukReliefValve.Name = "cmbprodukReliefValve";
-            this.cmbprodukReliefValve.Size = new System.Drawing.Size(241, 21);
-            this.cmbprodukReliefValve.TabIndex = 1;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(11, 26);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 13);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Produk";
-            // 
-            // chkReliefValve
-            // 
-            this.chkReliefValve.AutoSize = true;
-            this.chkReliefValve.Location = new System.Drawing.Point(8, 8);
-            this.chkReliefValve.Name = "chkReliefValve";
-            this.chkReliefValve.Size = new System.Drawing.Size(55, 17);
-            this.chkReliefValve.TabIndex = 21;
-            this.chkReliefValve.Text = "Dekat";
-            this.chkReliefValve.UseVisualStyleBackColor = true;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(0, 267);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(665, 276);
-            this.panel6.TabIndex = 20;
-            // 
             // FormAlkazober
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -1363,34 +1379,34 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }

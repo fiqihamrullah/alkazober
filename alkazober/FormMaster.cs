@@ -12,10 +12,89 @@ namespace alkazober
 {
     public partial class FormMaster : Form
     {
+        BindingSource bsProduct, bsMaterial, bsTempStandard, bsToP, bsUser;
         public FormMaster()
         {
             InitializeComponent();
         }
+
+        private void clearProduct()
+        {
+            txtNmProduk.Text = "";
+            txtSuhu.Text = "";
+        }
+
+        private void clearMaterial()
+        {
+            txtMaterial.Text = "";
+            txtDeskripsi.Text = "";
+        }
+
+        private void clearTempStandard()
+        {
+            txtTemp_C.Text = "";
+            txtTemp_F.Text = "";
+            txtTemp_Class.Text = "";
+        }
+
+        private void clearTypeOfProtection()
+        {
+            txtDesignation.Text = "";
+            txtTechnique.Text = "";
+          
+
+        }
+
+        private void clearUser()
+        {
+            txtNmAdmin.Text = "";
+            txtKataSandi.Text = "";
+        }
+
+        private void loadUser()
+        {
+            DBQuery dbq = new DBQuery();
+            dbq.FillTableBySQL("select * from user");
+            bsUser.DataSource = dbq.GetTable();
+            dgvUser.DataSource = bsUser;
+        }
+
+        private void loadProduct()
+        {
+            DBQuery dbq = new DBQuery();
+            dbq.FillTableBySQL("select * from produk");
+            bsProduct.DataSource = dbq.GetTable();
+            dgvProduk.DataSource = bsProduct;
+        }
+
+        private void loadMaterial()
+        {
+            DBQuery dbq = new DBQuery();
+            dbq.FillTableBySQL("select * from material");
+            bsMaterial.DataSource = dbq.GetTable();
+            dgvMaterial.DataSource = bsMaterial;
+        }
+
+        private void loadTempStandard()
+        {
+            DBQuery dbq = new DBQuery();
+            dbq.FillTableBySQL("select * from tempstandard");
+            bsTempStandard.DataSource = dbq.GetTable();
+            dgvTempStandard.DataSource = bsTempStandard;
+        }
+
+
+        private void loadToP()
+        {
+            DBQuery dbq = new DBQuery();
+            dbq.FillTableBySQL("select * from typeofprotection");
+            bsToP.DataSource = dbq.GetTable();
+            dgvToPD.DataSource = bsToP;
+        }
+
+
+
+
 
         private void saveUser(String username,String password)
         {
@@ -131,6 +210,16 @@ namespace alkazober
         }
 
         private void btnSimpanUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHapusProduk_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHapusToPD_Click(object sender, EventArgs e)
         {
 
         }
