@@ -209,6 +209,7 @@
             this.dgvProduk.Name = "dgvProduk";
             this.dgvProduk.Size = new System.Drawing.Size(517, 519);
             this.dgvProduk.TabIndex = 0;
+            this.dgvProduk.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduk_CellClick);
             // 
             // tabPage2
             // 

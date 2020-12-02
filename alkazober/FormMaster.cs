@@ -134,7 +134,7 @@ namespace alkazober
 
         private void saveProduct(String nmproduk, String suhu)
         {
-            String sql = "insert into produk (nm_produk,suhu)values('" + nmproduk + "'," + suhu + ")";
+            String sql = "insert into produk (nm_produk,suhu)values('" + nmproduk + "','" + suhu + "')";
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -330,6 +330,12 @@ namespace alkazober
                 MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadUser();
             }
+        }
+
+        private void dgvProduk_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtNmProduk.Text = dgvProduk.CurrentRow.Cells[1].Value.ToString();
+            txtSuhu.Text = dgvProduk.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
