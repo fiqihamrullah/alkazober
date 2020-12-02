@@ -199,9 +199,11 @@
             this.btnSimpanProduk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSimpanProduk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSimpanProduk.UseVisualStyleBackColor = false;
+            this.btnSimpanProduk.Click += new System.EventHandler(this.btnSimpanProduk_Click);
             // 
             // dgvProduk
             // 
+            this.dgvProduk.AllowUserToAddRows = false;
             this.dgvProduk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduk.Location = new System.Drawing.Point(406, 48);
             this.dgvProduk.Name = "dgvProduk";
@@ -234,6 +236,7 @@
             this.btnHapusMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHapusMaterial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHapusMaterial.UseVisualStyleBackColor = false;
+            this.btnHapusMaterial.Click += new System.EventHandler(this.btnHapusMaterial_Click);
             // 
             // btnSimpanMaterial
             // 
@@ -247,6 +250,7 @@
             this.btnSimpanMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSimpanMaterial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSimpanMaterial.UseVisualStyleBackColor = false;
+            this.btnSimpanMaterial.Click += new System.EventHandler(this.btnSimpanMaterial_Click);
             // 
             // groupBox2
             // 
@@ -298,6 +302,7 @@
             // 
             // dgvMaterial
             // 
+            this.dgvMaterial.AllowUserToAddRows = false;
             this.dgvMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaterial.Location = new System.Drawing.Point(6, 275);
             this.dgvMaterial.Name = "dgvMaterial";
@@ -331,6 +336,7 @@
             this.btnHapusTempStandard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHapusTempStandard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHapusTempStandard.UseVisualStyleBackColor = false;
+            this.btnHapusTempStandard.Click += new System.EventHandler(this.btnHapusTempStandard_Click);
             // 
             // btnSimpanTempStandard
             // 
@@ -344,6 +350,7 @@
             this.btnSimpanTempStandard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSimpanTempStandard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSimpanTempStandard.UseVisualStyleBackColor = false;
+            this.btnSimpanTempStandard.Click += new System.EventHandler(this.btnSimpanTempStandard_Click);
             // 
             // groupBox4
             // 
@@ -415,6 +422,7 @@
             // 
             // dgvTempStandard
             // 
+            this.dgvTempStandard.AllowUserToAddRows = false;
             this.dgvTempStandard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTempStandard.Location = new System.Drawing.Point(369, 63);
             this.dgvTempStandard.Name = "dgvTempStandard";
@@ -461,6 +469,7 @@
             this.btnSimpanToPD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSimpanToPD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSimpanToPD.UseVisualStyleBackColor = false;
+            this.btnSimpanToPD.Click += new System.EventHandler(this.btnSimpanToPD_Click);
             // 
             // groupBox5
             // 
@@ -479,8 +488,13 @@
             // 
             // cmbZone
             // 
+            this.cmbZone.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbZone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbZone.FormattingEnabled = true;
+            this.cmbZone.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2"});
             this.cmbZone.Location = new System.Drawing.Point(263, 161);
             this.cmbZone.Name = "cmbZone";
             this.cmbZone.Size = new System.Drawing.Size(55, 33);
@@ -531,6 +545,7 @@
             // 
             // dgvToPD
             // 
+            this.dgvToPD.AllowUserToAddRows = false;
             this.dgvToPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvToPD.Location = new System.Drawing.Point(373, 64);
             this.dgvToPD.Name = "dgvToPD";
@@ -563,6 +578,7 @@
             this.btnHapusUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHapusUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHapusUser.UseVisualStyleBackColor = false;
+            this.btnHapusUser.Click += new System.EventHandler(this.btnHapusUser_Click);
             // 
             // groupBox6
             // 
@@ -629,6 +645,7 @@
             // 
             // dgvUser
             // 
+            this.dgvUser.AllowUserToAddRows = false;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Location = new System.Drawing.Point(405, 49);
             this.dgvUser.Name = "dgvUser";

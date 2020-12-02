@@ -57,18 +57,21 @@
             this.masterDataToolStripMenuItem.Name = "masterDataToolStripMenuItem";
             this.masterDataToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.masterDataToolStripMenuItem.Text = "Master Data";
+            this.masterDataToolStripMenuItem.Click += new System.EventHandler(this.masterDataToolStripMenuItem_Click);
             // 
             // alkazoberToolStripMenuItem
             // 
             this.alkazoberToolStripMenuItem.Name = "alkazoberToolStripMenuItem";
             this.alkazoberToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.alkazoberToolStripMenuItem.Text = "Alkazober";
+            this.alkazoberToolStripMenuItem.Click += new System.EventHandler(this.alkazoberToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
