@@ -16,6 +16,21 @@ namespace alkazober
         public FormMaster()
         {
             InitializeComponent();
+
+            bsUser = new BindingSource();
+            bsProduct = new BindingSource();
+            bsMaterial = new BindingSource();
+            bsTempStandard = new BindingSource();
+            bsToP = new BindingSource();
+
+            cmbZone.SelectedIndex = 0;
+
+
+            loadUser();
+            loadProduct();
+            loadMaterial();
+            loadTempStandard();
+            loadToP();
         }
 
         private void clearProduct()
@@ -54,7 +69,7 @@ namespace alkazober
         private void loadUser()
         {
             DBQuery dbq = new DBQuery();
-            dbq.FillTableBySQL("select * from user");
+            dbq.FillTableBySQL("select * from `user`");
             bsUser.DataSource = dbq.GetTable();
             dgvUser.DataSource = bsUser;
         }
@@ -98,7 +113,7 @@ namespace alkazober
 
         private void saveUser(String username,String password)
         {
-            String sql = "insert into user (username,password)values('" + username + "','" + password + "')";
+            String sql = "insert into `user` (`username`,`password`)values('" + username + "','" + password + "')";
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -112,7 +127,7 @@ namespace alkazober
 
         private void deleteUser(String id)
         {
-            String sql = "delete from user where user_id=" + id;
+            String sql = "delete from `user` where user_id=" + id;
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -140,7 +155,7 @@ namespace alkazober
 
         private void saveMaterial(String nmmaterial, String deskripsi)
         {
-            String sql = "insert into material (nm_material,deskripsi)values('" + nmmaterial + "'," + deskripsi + ")";
+            String sql = "insert into material (nm_material,deskripsi)values('" + nmmaterial + "','" + deskripsi + "')";
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -185,7 +200,8 @@ namespace alkazober
 
         private void saveTypeOfProtection(String designation, String technique, String zone)
         {
-            String sql = "insert into typeofprotection (designation,technique,zone)values('" + designation + "','" + technique + "'," + zone + ")";
+            String sql = "insert into typeofprotection (designation,technique,`zone`)values('" + designation + "','" + technique + "','" + zone + "')";
+           // MessageBox.Show(sql);
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -204,6 +220,118 @@ namespace alkazober
             dbQ.ExecuteSQL(sql);
         }
 
+        private void btnSimpanProduk_Click(object sender, EventArgs e)
+        {
+            String nmproduk = txtNmProduk.Text;
+            String suhu = txtSuhu.Text;
+            if (nmproduk != "" && suhu != "")
+            {
+                saveProduct(nmproduk, suhu);
+                MessageBox.Show("Data Produk disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clearProduct();
+                loadProduct();
+            }else
+            {
+                MessageBox.Show("Lengkapi Terlebih dahulu!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void btnSimpanMaterial_Click(object sender, EventArgs e)
+        {
+            String nmmaterial = txtMaterial.Text;
+            String deskripsi = txtDeskripsi.Text;
+            if (nmmaterial != "" && deskripsi != "")
+            {
+                saveMaterial(nmmaterial,deskripsi);
+                MessageBox.Show("Data Material disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clearMaterial();
+                loadMaterial();
+            }else
+            {
+                MessageBox.Show("Lengkapi Terlebih dahulu!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+        }
+
+        private void btnHapusMaterial_Click(object sender, EventArgs e)
+        {
+            DialogResult res;
+
+            res = MessageBox.Show("Apakah Anda yakin akan menghapus data tersebut?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                deleteMaterial(dgvMaterial.CurrentRow.Cells[0].Value.ToString());
+                MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadMaterial();
+            }
+        }
+
+        private void btnSimpanTempStandard_Click(object sender, EventArgs e)
+        {
+            String tempc = txtTemp_C.Text;
+            String tempf = txtTemp_F.Text;
+            String tempClass = txtTemp_Class.Text;
+
+            if (tempc != "" && tempf != "" && tempClass != "")
+            {
+                saveTempStandard(tempc, tempf, tempClass);
+
+                MessageBox.Show("Data Temperatur Standard disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clearTempStandard();
+                loadTempStandard();
+            }else
+            {
+                MessageBox.Show("Lengkapi Terlebih dahulu!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void btnHapusTempStandard_Click(object sender, EventArgs e)
+        {
+            DialogResult res;
+
+            res = MessageBox.Show("Apakah Anda yakin akan menghapus data tersebut?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                deleteTempStandard(dgvTempStandard.CurrentRow.Cells[0].Value.ToString());
+                MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadTempStandard();
+            }
+        }
+
+        private void btnSimpanToPD_Click(object sender, EventArgs e)
+        {
+            String designation = txtDesignation.Text;
+            String technique = txtTechnique.Text;
+            String zone = cmbZone.SelectedItem.ToString();
+
+            if (designation != "" && technique != "")
+            {
+                saveTypeOfProtection(designation, technique, zone);
+                MessageBox.Show("Data Type of Protection disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clearTypeOfProtection();
+                loadToP();
+            }else
+            {
+                MessageBox.Show("Lengkapi Terlebih dahulu!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnHapusUser_Click(object sender, EventArgs e)
+        {
+            DialogResult res;
+
+            res = MessageBox.Show("Apakah Anda yakin akan menghapus data tersebut?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                deleteUser(dgvUser.CurrentRow.Cells[0].Value.ToString());
+                MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadUser();
+            }
+        }
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -211,17 +339,44 @@ namespace alkazober
 
         private void btnSimpanUser_Click(object sender, EventArgs e)
         {
-
+            String username = txtNmAdmin.Text;
+            String password = txtKataSandi.Text;
+            if (username != "" && password != "")
+            {
+                saveUser(username, password);
+                MessageBox.Show("Data User disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadUser();
+                clearUser();
+            }else
+            {
+                MessageBox.Show("Lengkapi Terlebih dahulu!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnHapusProduk_Click(object sender, EventArgs e)
         {
+            DialogResult res;
 
+            res = MessageBox.Show("Apakah Anda yakin akan menghapus data tersebut?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                deleteProduct(dgvProduk.CurrentRow.Cells[0].Value.ToString()); 
+                MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadProduct(); 
+            }
         }
 
         private void btnHapusToPD_Click(object sender, EventArgs e)
         {
+            DialogResult res;
 
+            res = MessageBox.Show("Apakah Anda yakin akan menghapus data tersebut?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                deleteTypeofProtection(dgvToPD.CurrentRow.Cells[0].Value.ToString());
+                MessageBox.Show("Data Berhasil Dihapus!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadToP();
+            }
         }
     }
 }

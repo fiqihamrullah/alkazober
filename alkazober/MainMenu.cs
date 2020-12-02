@@ -93,5 +93,25 @@ namespace alkazober
                 childForm.Close();
             }
         }
+
+        private void masterDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormMaster frmMaster = new FormMaster();
+            frmMaster.ShowDialog(); 
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLogin frmLogin = new FormLogin();
+            frmLogin.Show();
+            this.Dispose();
+        }
+
+        private void alkazoberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAlkazober frmAlkazober = new FormAlkazober();
+            frmAlkazober.ShowDialog();
+
+        }
     }
 }
