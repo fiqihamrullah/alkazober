@@ -206,6 +206,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cmbPenggunaan);
             this.groupBox1.Controls.Add(this.label1);
@@ -228,6 +231,9 @@
             // 
             // cmbPenggunaan
             // 
+            this.cmbPenggunaan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbPenggunaan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPenggunaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPenggunaan.FormattingEnabled = true;
             this.cmbPenggunaan.Location = new System.Drawing.Point(165, 66);
@@ -246,6 +252,9 @@
             // 
             // cmbMaterial
             // 
+            this.cmbMaterial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaterial.FormattingEnabled = true;
             this.cmbMaterial.Location = new System.Drawing.Point(165, 28);
@@ -263,9 +272,11 @@
             this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(15);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(673, 572);
+            this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage3
@@ -284,6 +295,7 @@
             // 
             // btnResetTangkiTimbun
             // 
+            this.btnResetTangkiTimbun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetTangkiTimbun.BackColor = System.Drawing.Color.White;
             this.btnResetTangkiTimbun.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetTangkiTimbun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -296,6 +308,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTNo);
             this.groupBox3.Controls.Add(this.rbtnSumpTrenchTTYes);
@@ -311,6 +325,7 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.cmbproduktt);
             this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(17, 34);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(630, 221);
@@ -323,7 +338,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(12, 185);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(203, 13);
+            this.label12.Size = new System.Drawing.Size(253, 16);
             this.label12.TabIndex = 5;
             this.label12.Text = "Berupa sump atau trench di area Tangki?";
             // 
@@ -332,7 +347,7 @@
             this.rbtnSumpTrenchTTNo.AutoSize = true;
             this.rbtnSumpTrenchTTNo.Location = new System.Drawing.Point(552, 183);
             this.rbtnSumpTrenchTTNo.Name = "rbtnSumpTrenchTTNo";
-            this.rbtnSumpTrenchTTNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnSumpTrenchTTNo.Size = new System.Drawing.Size(61, 20);
             this.rbtnSumpTrenchTTNo.TabIndex = 4;
             this.rbtnSumpTrenchTTNo.TabStop = true;
             this.rbtnSumpTrenchTTNo.Text = "Tidak";
@@ -343,7 +358,7 @@
             this.rbtnSumpTrenchTTYes.AutoSize = true;
             this.rbtnSumpTrenchTTYes.Location = new System.Drawing.Point(505, 183);
             this.rbtnSumpTrenchTTYes.Name = "rbtnSumpTrenchTTYes";
-            this.rbtnSumpTrenchTTYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnSumpTrenchTTYes.Size = new System.Drawing.Size(43, 20);
             this.rbtnSumpTrenchTTYes.TabIndex = 4;
             this.rbtnSumpTrenchTTYes.TabStop = true;
             this.rbtnSumpTrenchTTYes.Text = "Ya";
@@ -364,7 +379,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(12, 110);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 13);
+            this.label9.Size = new System.Drawing.Size(99, 16);
             this.label9.TabIndex = 2;
             this.label9.Text = "Tinggi Dike (m)";
             // 
@@ -383,7 +398,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 68);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 13);
+            this.label7.Size = new System.Drawing.Size(176, 16);
             this.label7.TabIndex = 2;
             this.label7.Text = "Jarak ke Dinding Tangki (m)";
             // 
@@ -391,7 +406,7 @@
             // 
             this.txtTinggiMaterial.BackColor = System.Drawing.Color.Yellow;
             this.txtTinggiMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiMaterial.Location = new System.Drawing.Point(513, 105);
+            this.txtTinggiMaterial.Location = new System.Drawing.Point(552, 146);
             this.txtTinggiMaterial.Name = "txtTinggiMaterial";
             this.txtTinggiMaterial.Size = new System.Drawing.Size(52, 26);
             this.txtTinggiMaterial.TabIndex = 3;
@@ -400,9 +415,9 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(317, 110);
+            this.label11.Location = new System.Drawing.Point(356, 151);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 13);
+            this.label11.Size = new System.Drawing.Size(119, 16);
             this.label11.TabIndex = 2;
             this.label11.Text = "Tinggi Material (m)";
             // 
@@ -410,7 +425,7 @@
             // 
             this.txtDiphatchDistance.BackColor = System.Drawing.Color.Yellow;
             this.txtDiphatchDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiphatchDistance.Location = new System.Drawing.Point(513, 63);
+            this.txtDiphatchDistance.Location = new System.Drawing.Point(552, 104);
             this.txtDiphatchDistance.Name = "txtDiphatchDistance";
             this.txtDiphatchDistance.Size = new System.Drawing.Size(52, 26);
             this.txtDiphatchDistance.TabIndex = 3;
@@ -419,9 +434,9 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(317, 68);
+            this.label10.Location = new System.Drawing.Point(356, 109);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 13);
+            this.label10.Size = new System.Drawing.Size(139, 16);
             this.label10.TabIndex = 2;
             this.label10.Text = "Jarak Ke Diphatch (m)";
             // 
@@ -429,7 +444,7 @@
             // 
             this.txtVentingDistance.BackColor = System.Drawing.Color.Yellow;
             this.txtVentingDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentingDistance.Location = new System.Drawing.Point(513, 23);
+            this.txtVentingDistance.Location = new System.Drawing.Point(552, 64);
             this.txtVentingDistance.Name = "txtVentingDistance";
             this.txtVentingDistance.Size = new System.Drawing.Size(52, 26);
             this.txtVentingDistance.TabIndex = 3;
@@ -438,18 +453,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(317, 28);
+            this.label5.Location = new System.Drawing.Point(356, 69);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.Size = new System.Drawing.Size(128, 16);
             this.label5.TabIndex = 2;
             this.label5.Text = "Jarak Ke Venting(m)";
             // 
             // cmbproduktt
             // 
+            this.cmbproduktt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbproduktt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbproduktt.FormattingEnabled = true;
             this.cmbproduktt.Location = new System.Drawing.Point(101, 23);
             this.cmbproduktt.Name = "cmbproduktt";
-            this.cmbproduktt.Size = new System.Drawing.Size(186, 21);
+            this.cmbproduktt.Size = new System.Drawing.Size(503, 28);
             this.cmbproduktt.TabIndex = 1;
             // 
             // label4
@@ -457,14 +474,14 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Produk";
             // 
             // chkTangkiTimbun
             // 
             this.chkTangkiTimbun.AutoSize = true;
-            this.chkTangkiTimbun.Location = new System.Drawing.Point(8, 11);
+            this.chkTangkiTimbun.Location = new System.Drawing.Point(24, 11);
             this.chkTangkiTimbun.Name = "chkTangkiTimbun";
             this.chkTangkiTimbun.Size = new System.Drawing.Size(55, 17);
             this.chkTangkiTimbun.TabIndex = 1;
@@ -494,6 +511,7 @@
             // 
             // btnResetFillingRTWMT
             // 
+            this.btnResetFillingRTWMT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetFillingRTWMT.BackColor = System.Drawing.Color.White;
             this.btnResetFillingRTWMT.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetFillingRTWMT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -506,6 +524,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTNo);
             this.groupBox4.Controls.Add(this.rbtnFIllingRTWMTYes);
@@ -517,6 +537,7 @@
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.cmbProdukFillingRTWMT);
             this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(17, 31);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(630, 221);
@@ -529,7 +550,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(12, 185);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(196, 13);
+            this.label13.Size = new System.Drawing.Size(246, 16);
             this.label13.TabIndex = 5;
             this.label13.Text = "Berupa sump atau trench di area Filling?";
             // 
@@ -538,7 +559,7 @@
             this.rbtnFIllingRTWMTNo.AutoSize = true;
             this.rbtnFIllingRTWMTNo.Location = new System.Drawing.Point(540, 185);
             this.rbtnFIllingRTWMTNo.Name = "rbtnFIllingRTWMTNo";
-            this.rbtnFIllingRTWMTNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnFIllingRTWMTNo.Size = new System.Drawing.Size(61, 20);
             this.rbtnFIllingRTWMTNo.TabIndex = 4;
             this.rbtnFIllingRTWMTNo.TabStop = true;
             this.rbtnFIllingRTWMTNo.Text = "Tidak";
@@ -549,7 +570,7 @@
             this.rbtnFIllingRTWMTYes.AutoSize = true;
             this.rbtnFIllingRTWMTYes.Location = new System.Drawing.Point(493, 185);
             this.rbtnFIllingRTWMTYes.Name = "rbtnFIllingRTWMTYes";
-            this.rbtnFIllingRTWMTYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnFIllingRTWMTYes.Size = new System.Drawing.Size(43, 20);
             this.rbtnFIllingRTWMTYes.TabIndex = 4;
             this.rbtnFIllingRTWMTYes.TabStop = true;
             this.rbtnFIllingRTWMTYes.Text = "Ya";
@@ -559,7 +580,7 @@
             // 
             this.txtTinggiFillingPointRTW.BackColor = System.Drawing.Color.Yellow;
             this.txtTinggiFillingPointRTW.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiFillingPointRTW.Location = new System.Drawing.Point(208, 99);
+            this.txtTinggiFillingPointRTW.Location = new System.Drawing.Point(549, 100);
             this.txtTinggiFillingPointRTW.Name = "txtTinggiFillingPointRTW";
             this.txtTinggiFillingPointRTW.Size = new System.Drawing.Size(52, 26);
             this.txtTinggiFillingPointRTW.TabIndex = 3;
@@ -570,7 +591,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(12, 106);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 13);
+            this.label14.Size = new System.Drawing.Size(126, 16);
             this.label14.TabIndex = 2;
             this.label14.Text = "Tinggi Mainhole (m)";
             // 
@@ -578,7 +599,7 @@
             // 
             this.txtMainholePengisian.BackColor = System.Drawing.Color.Yellow;
             this.txtMainholePengisian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainholePengisian.Location = new System.Drawing.Point(208, 63);
+            this.txtMainholePengisian.Location = new System.Drawing.Point(549, 62);
             this.txtMainholePengisian.Name = "txtMainholePengisian";
             this.txtMainholePengisian.Size = new System.Drawing.Size(52, 26);
             this.txtMainholePengisian.TabIndex = 3;
@@ -589,7 +610,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(12, 68);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 13);
+            this.label15.Size = new System.Drawing.Size(202, 16);
             this.label15.TabIndex = 2;
             this.label15.Text = "Jarak ke Mainhole pengisian (m)";
             // 
@@ -597,7 +618,7 @@
             // 
             this.txtTinggiMaterialRTWMT.BackColor = System.Drawing.Color.Yellow;
             this.txtTinggiMaterialRTWMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTinggiMaterialRTWMT.Location = new System.Drawing.Point(208, 136);
+            this.txtTinggiMaterialRTWMT.Location = new System.Drawing.Point(549, 138);
             this.txtTinggiMaterialRTWMT.Name = "txtTinggiMaterialRTWMT";
             this.txtTinggiMaterialRTWMT.Size = new System.Drawing.Size(52, 26);
             this.txtTinggiMaterialRTWMT.TabIndex = 3;
@@ -608,16 +629,18 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(13, 144);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 13);
+            this.label16.Size = new System.Drawing.Size(119, 16);
             this.label16.TabIndex = 2;
             this.label16.Text = "Tinggi Material (m)";
             // 
             // cmbProdukFillingRTWMT
             // 
+            this.cmbProdukFillingRTWMT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProdukFillingRTWMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProdukFillingRTWMT.FormattingEnabled = true;
             this.cmbProdukFillingRTWMT.Location = new System.Drawing.Point(101, 23);
             this.cmbProdukFillingRTWMT.Name = "cmbProdukFillingRTWMT";
-            this.cmbProdukFillingRTWMT.Size = new System.Drawing.Size(241, 21);
+            this.cmbProdukFillingRTWMT.Size = new System.Drawing.Size(500, 28);
             this.cmbProdukFillingRTWMT.TabIndex = 1;
             // 
             // label19
@@ -625,14 +648,14 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(11, 26);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.Size = new System.Drawing.Size(51, 16);
             this.label19.TabIndex = 0;
             this.label19.Text = "Produk";
             // 
             // chkFillingRTWMT
             // 
             this.chkFillingRTWMT.AutoSize = true;
-            this.chkFillingRTWMT.Location = new System.Drawing.Point(8, 8);
+            this.chkFillingRTWMT.Location = new System.Drawing.Point(24, 11);
             this.chkFillingRTWMT.Name = "chkFillingRTWMT";
             this.chkFillingRTWMT.Size = new System.Drawing.Size(55, 17);
             this.chkFillingRTWMT.TabIndex = 5;
@@ -662,6 +685,7 @@
             // 
             // btnResetDermagaMLA
             // 
+            this.btnResetDermagaMLA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetDermagaMLA.BackColor = System.Drawing.Color.White;
             this.btnResetDermagaMLA.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetDermagaMLA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -674,6 +698,8 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.groupBox6);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.rbtnDermagaMLANo);
@@ -686,6 +712,7 @@
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.cmbprodukDermagaMLA);
             this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(17, 31);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(630, 221);
@@ -709,7 +736,7 @@
             this.rbtnDarat.AutoSize = true;
             this.rbtnDarat.Location = new System.Drawing.Point(6, 68);
             this.rbtnDarat.Name = "rbtnDarat";
-            this.rbtnDarat.Size = new System.Drawing.Size(195, 17);
+            this.rbtnDarat.Size = new System.Drawing.Size(240, 20);
             this.rbtnDarat.TabIndex = 2;
             this.rbtnDarat.TabStop = true;
             this.rbtnDarat.Text = "Diletakkan mengarah ke Area Darat";
@@ -720,7 +747,7 @@
             this.rbtnSepanjang.AutoSize = true;
             this.rbtnSepanjang.Location = new System.Drawing.Point(6, 45);
             this.rbtnSepanjang.Name = "rbtnSepanjang";
-            this.rbtnSepanjang.Size = new System.Drawing.Size(222, 17);
+            this.rbtnSepanjang.Size = new System.Drawing.Size(275, 20);
             this.rbtnSepanjang.TabIndex = 1;
             this.rbtnSepanjang.TabStop = true;
             this.rbtnSepanjang.Text = "Diletakkan di sepanjang Pergerakan MLA";
@@ -731,7 +758,7 @@
             this.rbtnBawah.AutoSize = true;
             this.rbtnBawah.Location = new System.Drawing.Point(6, 19);
             this.rbtnBawah.Name = "rbtnBawah";
-            this.rbtnBawah.Size = new System.Drawing.Size(193, 17);
+            this.rbtnBawah.Size = new System.Drawing.Size(239, 20);
             this.rbtnBawah.TabIndex = 0;
             this.rbtnBawah.TabStop = true;
             this.rbtnBawah.Text = "Diletakkan di Area bawah Dermaga";
@@ -742,7 +769,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(12, 185);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(159, 13);
+            this.label17.Size = new System.Drawing.Size(203, 16);
             this.label17.TabIndex = 5;
             this.label17.Text = "Berupa sump  di area Dermaga?";
             // 
@@ -751,7 +778,7 @@
             this.rbtnDermagaMLANo.AutoSize = true;
             this.rbtnDermagaMLANo.Location = new System.Drawing.Point(540, 185);
             this.rbtnDermagaMLANo.Name = "rbtnDermagaMLANo";
-            this.rbtnDermagaMLANo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnDermagaMLANo.Size = new System.Drawing.Size(61, 20);
             this.rbtnDermagaMLANo.TabIndex = 4;
             this.rbtnDermagaMLANo.TabStop = true;
             this.rbtnDermagaMLANo.Text = "Tidak";
@@ -762,7 +789,7 @@
             this.rbtnDermagaMLAYes.AutoSize = true;
             this.rbtnDermagaMLAYes.Location = new System.Drawing.Point(493, 185);
             this.rbtnDermagaMLAYes.Name = "rbtnDermagaMLAYes";
-            this.rbtnDermagaMLAYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnDermagaMLAYes.Size = new System.Drawing.Size(43, 20);
             this.rbtnDermagaMLAYes.TabIndex = 4;
             this.rbtnDermagaMLAYes.TabStop = true;
             this.rbtnDermagaMLAYes.Text = "Ya";
@@ -783,7 +810,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(356, 103);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(122, 13);
+            this.label18.Size = new System.Drawing.Size(157, 16);
             this.label18.TabIndex = 2;
             this.label18.Text = "Tinggi  dari Dermaga (m)";
             // 
@@ -802,7 +829,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(356, 65);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 13);
+            this.label20.Size = new System.Drawing.Size(120, 16);
             this.label20.TabIndex = 2;
             this.label20.Text = "Jarak dari MLA (m)";
             // 
@@ -821,16 +848,18 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(357, 141);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 13);
+            this.label21.Size = new System.Drawing.Size(98, 16);
             this.label21.TabIndex = 2;
             this.label21.Text = "Tinggi MLA (m)";
             // 
             // cmbprodukDermagaMLA
             // 
+            this.cmbprodukDermagaMLA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbprodukDermagaMLA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbprodukDermagaMLA.FormattingEnabled = true;
             this.cmbprodukDermagaMLA.Location = new System.Drawing.Point(101, 23);
             this.cmbprodukDermagaMLA.Name = "cmbprodukDermagaMLA";
-            this.cmbprodukDermagaMLA.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukDermagaMLA.Size = new System.Drawing.Size(503, 28);
             this.cmbprodukDermagaMLA.TabIndex = 1;
             // 
             // label22
@@ -838,14 +867,14 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(11, 26);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.Size = new System.Drawing.Size(51, 16);
             this.label22.TabIndex = 0;
             this.label22.Text = "Produk";
             // 
             // chkDermagaMLA
             // 
             this.chkDermagaMLA.AutoSize = true;
-            this.chkDermagaMLA.Location = new System.Drawing.Point(8, 8);
+            this.chkDermagaMLA.Location = new System.Drawing.Point(24, 8);
             this.chkDermagaMLA.Name = "chkDermagaMLA";
             this.chkDermagaMLA.Size = new System.Drawing.Size(55, 17);
             this.chkDermagaMLA.TabIndex = 9;
@@ -875,6 +904,7 @@
             // 
             // btnResetRumahPompa
             // 
+            this.btnResetRumahPompa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetRumahPompa.BackColor = System.Drawing.Color.White;
             this.btnResetRumahPompa.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetRumahPompa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -887,6 +917,8 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox7.Controls.Add(this.groupBox8);
             this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.Controls.Add(this.rbtnRumahPompaNo);
@@ -898,6 +930,7 @@
             this.groupBox7.Controls.Add(this.label26);
             this.groupBox7.Controls.Add(this.cmbprodukRumahPompa);
             this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(17, 31);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(630, 221);
@@ -909,7 +942,7 @@
             // 
             this.groupBox8.Controls.Add(this.rbtnLuar);
             this.groupBox8.Controls.Add(this.rbtnDalam);
-            this.groupBox8.Location = new System.Drawing.Point(202, 50);
+            this.groupBox8.Location = new System.Drawing.Point(388, 57);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(216, 54);
             this.groupBox8.TabIndex = 6;
@@ -920,7 +953,7 @@
             this.rbtnLuar.AutoSize = true;
             this.rbtnLuar.Location = new System.Drawing.Point(138, 21);
             this.rbtnLuar.Name = "rbtnLuar";
-            this.rbtnLuar.Size = new System.Drawing.Size(46, 17);
+            this.rbtnLuar.Size = new System.Drawing.Size(52, 20);
             this.rbtnLuar.TabIndex = 1;
             this.rbtnLuar.TabStop = true;
             this.rbtnLuar.Text = "Luar";
@@ -931,7 +964,7 @@
             this.rbtnDalam.AutoSize = true;
             this.rbtnDalam.Location = new System.Drawing.Point(39, 21);
             this.rbtnDalam.Name = "rbtnDalam";
-            this.rbtnDalam.Size = new System.Drawing.Size(55, 17);
+            this.rbtnDalam.Size = new System.Drawing.Size(66, 20);
             this.rbtnDalam.TabIndex = 0;
             this.rbtnDalam.TabStop = true;
             this.rbtnDalam.Text = "Dalam";
@@ -942,7 +975,7 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(11, 194);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(144, 13);
+            this.label23.Size = new System.Drawing.Size(177, 16);
             this.label23.TabIndex = 5;
             this.label23.Text = "Berupa Sump  atau Trench ?";
             // 
@@ -951,7 +984,7 @@
             this.rbtnRumahPompaNo.AutoSize = true;
             this.rbtnRumahPompaNo.Location = new System.Drawing.Point(539, 194);
             this.rbtnRumahPompaNo.Name = "rbtnRumahPompaNo";
-            this.rbtnRumahPompaNo.Size = new System.Drawing.Size(52, 17);
+            this.rbtnRumahPompaNo.Size = new System.Drawing.Size(61, 20);
             this.rbtnRumahPompaNo.TabIndex = 4;
             this.rbtnRumahPompaNo.TabStop = true;
             this.rbtnRumahPompaNo.Text = "Tidak";
@@ -962,7 +995,7 @@
             this.rbtnRumahPompaYes.AutoSize = true;
             this.rbtnRumahPompaYes.Location = new System.Drawing.Point(492, 194);
             this.rbtnRumahPompaYes.Name = "rbtnRumahPompaYes";
-            this.rbtnRumahPompaYes.Size = new System.Drawing.Size(38, 17);
+            this.rbtnRumahPompaYes.Size = new System.Drawing.Size(43, 20);
             this.rbtnRumahPompaYes.TabIndex = 4;
             this.rbtnRumahPompaYes.TabStop = true;
             this.rbtnRumahPompaYes.Text = "Ya";
@@ -972,7 +1005,7 @@
             // 
             this.txtCompressorDistance.BackColor = System.Drawing.Color.Yellow;
             this.txtCompressorDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompressorDistance.Location = new System.Drawing.Point(202, 110);
+            this.txtCompressorDistance.Location = new System.Drawing.Point(552, 117);
             this.txtCompressorDistance.Name = "txtCompressorDistance";
             this.txtCompressorDistance.Size = new System.Drawing.Size(52, 26);
             this.txtCompressorDistance.TabIndex = 3;
@@ -981,9 +1014,9 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(12, 61);
+            this.label25.Location = new System.Drawing.Point(11, 78);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 13);
+            this.label25.Size = new System.Drawing.Size(130, 16);
             this.label25.TabIndex = 2;
             this.label25.Text = "Peletakan di dinding";
             // 
@@ -992,7 +1025,7 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(6, 117);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(162, 13);
+            this.label24.Size = new System.Drawing.Size(207, 16);
             this.label24.TabIndex = 2;
             this.label24.Text = "Jarak ke pompa/ compressor (m)";
             // 
@@ -1000,7 +1033,7 @@
             // 
             this.txtVentilasiAtapRumahDistance.BackColor = System.Drawing.Color.Yellow;
             this.txtVentilasiAtapRumahDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVentilasiAtapRumahDistance.Location = new System.Drawing.Point(202, 147);
+            this.txtVentilasiAtapRumahDistance.Location = new System.Drawing.Point(552, 153);
             this.txtVentilasiAtapRumahDistance.Name = "txtVentilasiAtapRumahDistance";
             this.txtVentilasiAtapRumahDistance.Size = new System.Drawing.Size(52, 26);
             this.txtVentilasiAtapRumahDistance.TabIndex = 3;
@@ -1011,16 +1044,18 @@
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(5, 153);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(134, 13);
+            this.label26.Size = new System.Drawing.Size(169, 16);
             this.label26.TabIndex = 2;
             this.label26.Text = " Jarak ke Ventilasi atap (m)";
             // 
             // cmbprodukRumahPompa
             // 
+            this.cmbprodukRumahPompa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbprodukRumahPompa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbprodukRumahPompa.FormattingEnabled = true;
             this.cmbprodukRumahPompa.Location = new System.Drawing.Point(101, 23);
             this.cmbprodukRumahPompa.Name = "cmbprodukRumahPompa";
-            this.cmbprodukRumahPompa.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukRumahPompa.Size = new System.Drawing.Size(503, 28);
             this.cmbprodukRumahPompa.TabIndex = 1;
             // 
             // label27
@@ -1028,14 +1063,14 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(11, 26);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 13);
+            this.label27.Size = new System.Drawing.Size(51, 16);
             this.label27.TabIndex = 0;
             this.label27.Text = "Produk";
             // 
             // chkRumahPompa
             // 
             this.chkRumahPompa.AutoSize = true;
-            this.chkRumahPompa.Location = new System.Drawing.Point(8, 8);
+            this.chkRumahPompa.Location = new System.Drawing.Point(31, 8);
             this.chkRumahPompa.Name = "chkRumahPompa";
             this.chkRumahPompa.Size = new System.Drawing.Size(55, 17);
             this.chkRumahPompa.TabIndex = 13;
@@ -1065,6 +1100,7 @@
             // 
             // btnResetVenting
             // 
+            this.btnResetVenting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetVenting.BackColor = System.Drawing.Color.White;
             this.btnResetVenting.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetVenting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -1077,10 +1113,13 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox9.Controls.Add(this.txtVentingDistance2);
             this.groupBox9.Controls.Add(this.label30);
             this.groupBox9.Controls.Add(this.cmbprodukVenting);
             this.groupBox9.Controls.Add(this.label32);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(17, 31);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(630, 221);
@@ -1103,16 +1142,18 @@
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(11, 88);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(106, 13);
+            this.label30.Size = new System.Drawing.Size(131, 16);
             this.label30.TabIndex = 2;
             this.label30.Text = "Jarak ke venting  (m)";
             // 
             // cmbprodukVenting
             // 
+            this.cmbprodukVenting.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbprodukVenting.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbprodukVenting.FormattingEnabled = true;
             this.cmbprodukVenting.Location = new System.Drawing.Point(101, 23);
             this.cmbprodukVenting.Name = "cmbprodukVenting";
-            this.cmbprodukVenting.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukVenting.Size = new System.Drawing.Size(503, 28);
             this.cmbprodukVenting.TabIndex = 1;
             // 
             // label32
@@ -1120,14 +1161,14 @@
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(11, 26);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.Size = new System.Drawing.Size(51, 16);
             this.label32.TabIndex = 0;
             this.label32.Text = "Produk";
             // 
             // chkVenting
             // 
             this.chkVenting.AutoSize = true;
-            this.chkVenting.Location = new System.Drawing.Point(8, 8);
+            this.chkVenting.Location = new System.Drawing.Point(24, 6);
             this.chkVenting.Name = "chkVenting";
             this.chkVenting.Size = new System.Drawing.Size(55, 17);
             this.chkVenting.TabIndex = 17;
@@ -1157,6 +1198,7 @@
             // 
             // btnResetReliefValve
             // 
+            this.btnResetReliefValve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetReliefValve.BackColor = System.Drawing.Color.White;
             this.btnResetReliefValve.BackgroundImage = global::alkazober.Properties.Resources.reload_32;
             this.btnResetReliefValve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -1169,10 +1211,13 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox10.Controls.Add(this.txtReliefValveDistance);
             this.groupBox10.Controls.Add(this.label28);
             this.groupBox10.Controls.Add(this.cmbprodukReliefValve);
             this.groupBox10.Controls.Add(this.label29);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(17, 31);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(630, 221);
@@ -1184,9 +1229,9 @@
             // 
             this.txtReliefValveDistance.BackColor = System.Drawing.Color.Yellow;
             this.txtReliefValveDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReliefValveDistance.Location = new System.Drawing.Point(552, 75);
+            this.txtReliefValveDistance.Location = new System.Drawing.Point(531, 88);
             this.txtReliefValveDistance.Name = "txtReliefValveDistance";
-            this.txtReliefValveDistance.Size = new System.Drawing.Size(52, 26);
+            this.txtReliefValveDistance.Size = new System.Drawing.Size(73, 26);
             this.txtReliefValveDistance.TabIndex = 3;
             this.txtReliefValveDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1195,16 +1240,18 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(11, 88);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(122, 13);
+            this.label28.Size = new System.Drawing.Size(153, 16);
             this.label28.TabIndex = 2;
             this.label28.Text = "Jarak ke relief valve  (m)";
             // 
             // cmbprodukReliefValve
             // 
+            this.cmbprodukReliefValve.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbprodukReliefValve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbprodukReliefValve.FormattingEnabled = true;
             this.cmbprodukReliefValve.Location = new System.Drawing.Point(101, 23);
             this.cmbprodukReliefValve.Name = "cmbprodukReliefValve";
-            this.cmbprodukReliefValve.Size = new System.Drawing.Size(241, 21);
+            this.cmbprodukReliefValve.Size = new System.Drawing.Size(503, 28);
             this.cmbprodukReliefValve.TabIndex = 1;
             // 
             // label29
@@ -1212,14 +1259,14 @@
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(11, 26);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 13);
+            this.label29.Size = new System.Drawing.Size(51, 16);
             this.label29.TabIndex = 0;
             this.label29.Text = "Produk";
             // 
             // chkReliefValve
             // 
             this.chkReliefValve.AutoSize = true;
-            this.chkReliefValve.Location = new System.Drawing.Point(8, 8);
+            this.chkReliefValve.Location = new System.Drawing.Point(31, 8);
             this.chkReliefValve.Name = "chkReliefValve";
             this.chkReliefValve.Size = new System.Drawing.Size(55, 17);
             this.chkReliefValve.TabIndex = 21;
@@ -1235,6 +1282,7 @@
             // 
             // btnResetALL
             // 
+            this.btnResetALL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnResetALL.BackColor = System.Drawing.Color.White;
             this.btnResetALL.BackgroundImage = global::alkazober.Properties.Resources.header_bg;
             this.btnResetALL.ForeColor = System.Drawing.Color.White;
@@ -1258,9 +1306,11 @@
             this.btnReverse.TabIndex = 2;
             this.btnReverse.Text = "Reverse";
             this.btnReverse.UseVisualStyleBackColor = false;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
             // btnSubmitALL
             // 
+            this.btnSubmitALL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubmitALL.BackColor = System.Drawing.Color.White;
             this.btnSubmitALL.Location = new System.Drawing.Point(362, 20);
             this.btnSubmitALL.Name = "btnSubmitALL";
@@ -1271,6 +1321,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.txtDecisionResult);
             this.groupBox2.Controls.Add(this.lblToPD);
             this.groupBox2.Controls.Add(this.label8);
@@ -1288,6 +1341,9 @@
             // 
             // txtDecisionResult
             // 
+            this.txtDecisionResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDecisionResult.Location = new System.Drawing.Point(22, 190);
             this.txtDecisionResult.Multiline = true;
             this.txtDecisionResult.Name = "txtDecisionResult";
@@ -1297,6 +1353,7 @@
             // 
             // lblToPD
             // 
+            this.lblToPD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblToPD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToPD.ForeColor = System.Drawing.Color.Maroon;
             this.lblToPD.Location = new System.Drawing.Point(324, 141);
@@ -1318,6 +1375,7 @@
             // 
             // lblClassMST
             // 
+            this.lblClassMST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClassMST.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClassMST.ForeColor = System.Drawing.Color.Maroon;
             this.lblClassMST.Location = new System.Drawing.Point(374, 89);
@@ -1339,6 +1397,7 @@
             // 
             // lblDivisionClass
             // 
+            this.lblDivisionClass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDivisionClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDivisionClass.ForeColor = System.Drawing.Color.Maroon;
             this.lblDivisionClass.Location = new System.Drawing.Point(221, 40);

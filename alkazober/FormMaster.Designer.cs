@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnResetProduk = new System.Windows.Forms.Button();
             this.btnHapusProduk = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,6 +45,7 @@
             this.btnSimpanProduk = new System.Windows.Forms.Button();
             this.dgvProduk = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnResetMaterial = new System.Windows.Forms.Button();
             this.btnHapusMaterial = new System.Windows.Forms.Button();
             this.btnSimpanMaterial = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,6 +55,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgvMaterial = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnResetTempStandard = new System.Windows.Forms.Button();
             this.btnHapusTempStandard = new System.Windows.Forms.Button();
             this.btnSimpanTempStandard = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -59,6 +67,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTempStandard = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnResetToP = new System.Windows.Forms.Button();
             this.btnHapusToPD = new System.Windows.Forms.Button();
             this.btnSimpanToPD = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -70,6 +79,7 @@
             this.txtDesignation = new System.Windows.Forms.TextBox();
             this.dgvToPD = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnResetPengguna = new System.Windows.Forms.Button();
             this.btnHapusUser = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -113,6 +123,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnResetProduk);
             this.tabPage1.Controls.Add(this.btnHapusProduk);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.btnSimpanProduk);
@@ -125,6 +136,16 @@
             this.tabPage1.Text = "Produk";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnResetProduk
+            // 
+            this.btnResetProduk.Location = new System.Drawing.Point(17, 189);
+            this.btnResetProduk.Name = "btnResetProduk";
+            this.btnResetProduk.Size = new System.Drawing.Size(109, 48);
+            this.btnResetProduk.TabIndex = 8;
+            this.btnResetProduk.Text = "Reset";
+            this.btnResetProduk.UseVisualStyleBackColor = true;
+            this.btnResetProduk.Click += new System.EventHandler(this.btnResetProduk_Click);
             // 
             // btnHapusProduk
             // 
@@ -204,6 +225,10 @@
             // dgvProduk
             // 
             this.dgvProduk.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dgvProduk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProduk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduk.Location = new System.Drawing.Point(406, 48);
             this.dgvProduk.Name = "dgvProduk";
@@ -213,6 +238,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnResetMaterial);
             this.tabPage2.Controls.Add(this.btnHapusMaterial);
             this.tabPage2.Controls.Add(this.btnSimpanMaterial);
             this.tabPage2.Controls.Add(this.groupBox2);
@@ -224,6 +250,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Material";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnResetMaterial
+            // 
+            this.btnResetMaterial.Location = new System.Drawing.Point(8, 218);
+            this.btnResetMaterial.Name = "btnResetMaterial";
+            this.btnResetMaterial.Size = new System.Drawing.Size(109, 48);
+            this.btnResetMaterial.TabIndex = 10;
+            this.btnResetMaterial.Text = "Reset";
+            this.btnResetMaterial.UseVisualStyleBackColor = true;
+            this.btnResetMaterial.Click += new System.EventHandler(this.btnResetMaterial_Click);
             // 
             // btnHapusMaterial
             // 
@@ -304,14 +340,21 @@
             // dgvMaterial
             // 
             this.dgvMaterial.AllowUserToAddRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvMaterial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaterial.Location = new System.Drawing.Point(6, 275);
             this.dgvMaterial.Name = "dgvMaterial";
             this.dgvMaterial.Size = new System.Drawing.Size(915, 290);
             this.dgvMaterial.TabIndex = 0;
+            this.dgvMaterial.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMaterial_CellClick);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnResetTempStandard);
             this.tabPage3.Controls.Add(this.btnHapusTempStandard);
             this.tabPage3.Controls.Add(this.btnSimpanTempStandard);
             this.tabPage3.Controls.Add(this.groupBox4);
@@ -324,6 +367,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Temperature Standard";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnResetTempStandard
+            // 
+            this.btnResetTempStandard.Location = new System.Drawing.Point(15, 258);
+            this.btnResetTempStandard.Name = "btnResetTempStandard";
+            this.btnResetTempStandard.Size = new System.Drawing.Size(109, 48);
+            this.btnResetTempStandard.TabIndex = 12;
+            this.btnResetTempStandard.Text = "Reset";
+            this.btnResetTempStandard.UseVisualStyleBackColor = true;
+            this.btnResetTempStandard.Click += new System.EventHandler(this.btnResetTempStandard_Click);
             // 
             // btnHapusTempStandard
             // 
@@ -424,14 +477,20 @@
             // dgvTempStandard
             // 
             this.dgvTempStandard.AllowUserToAddRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dgvTempStandard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTempStandard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTempStandard.Location = new System.Drawing.Point(369, 63);
             this.dgvTempStandard.Name = "dgvTempStandard";
             this.dgvTempStandard.Size = new System.Drawing.Size(552, 502);
             this.dgvTempStandard.TabIndex = 0;
+            this.dgvTempStandard.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTempStandard_CellClick);
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btnResetToP);
             this.tabPage4.Controls.Add(this.btnHapusToPD);
             this.tabPage4.Controls.Add(this.btnSimpanToPD);
             this.tabPage4.Controls.Add(this.groupBox5);
@@ -443,6 +502,16 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Type of Protection Designation";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnResetToP
+            // 
+            this.btnResetToP.Location = new System.Drawing.Point(8, 248);
+            this.btnResetToP.Name = "btnResetToP";
+            this.btnResetToP.Size = new System.Drawing.Size(109, 48);
+            this.btnResetToP.TabIndex = 14;
+            this.btnResetToP.Text = "Reset";
+            this.btnResetToP.UseVisualStyleBackColor = true;
+            this.btnResetToP.Click += new System.EventHandler(this.btnResetToP_Click);
             // 
             // btnHapusToPD
             // 
@@ -495,16 +564,17 @@
             this.cmbZone.Items.AddRange(new object[] {
             "0",
             "1",
-            "2"});
-            this.cmbZone.Location = new System.Drawing.Point(263, 161);
+            "2",
+            "Unclassified"});
+            this.cmbZone.Location = new System.Drawing.Point(168, 161);
             this.cmbZone.Name = "cmbZone";
-            this.cmbZone.Size = new System.Drawing.Size(55, 33);
+            this.cmbZone.Size = new System.Drawing.Size(150, 33);
             this.cmbZone.TabIndex = 8;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(207, 173);
+            this.label9.Location = new System.Drawing.Point(130, 173);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 7;
@@ -547,14 +617,20 @@
             // dgvToPD
             // 
             this.dgvToPD.AllowUserToAddRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dgvToPD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvToPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvToPD.Location = new System.Drawing.Point(373, 64);
             this.dgvToPD.Name = "dgvToPD";
             this.dgvToPD.Size = new System.Drawing.Size(555, 508);
             this.dgvToPD.TabIndex = 0;
+            this.dgvToPD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvToPD_CellClick);
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnResetPengguna);
             this.tabPage5.Controls.Add(this.btnHapusUser);
             this.tabPage5.Controls.Add(this.groupBox6);
             this.tabPage5.Controls.Add(this.btnSimpanUser);
@@ -566,6 +642,16 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Pengguna";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btnResetPengguna
+            // 
+            this.btnResetPengguna.Location = new System.Drawing.Point(8, 192);
+            this.btnResetPengguna.Name = "btnResetPengguna";
+            this.btnResetPengguna.Size = new System.Drawing.Size(109, 48);
+            this.btnResetPengguna.TabIndex = 12;
+            this.btnResetPengguna.Text = "Reset";
+            this.btnResetPengguna.UseVisualStyleBackColor = true;
+            this.btnResetPengguna.Click += new System.EventHandler(this.btnResetPengguna_Click);
             // 
             // btnHapusUser
             // 
@@ -647,11 +733,16 @@
             // dgvUser
             // 
             this.dgvUser.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Blue;
+            this.dgvUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Location = new System.Drawing.Point(405, 49);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.Size = new System.Drawing.Size(517, 519);
             this.dgvUser.TabIndex = 8;
+            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
             // 
             // FormMaster
             // 
@@ -742,5 +833,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnSimpanUser;
         private System.Windows.Forms.DataGridView dgvUser;
+        private System.Windows.Forms.Button btnResetProduk;
+        private System.Windows.Forms.Button btnResetMaterial;
+        private System.Windows.Forms.Button btnResetTempStandard;
+        private System.Windows.Forms.Button btnResetToP;
+        private System.Windows.Forms.Button btnResetPengguna;
     }
 }

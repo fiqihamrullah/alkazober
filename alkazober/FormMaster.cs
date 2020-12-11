@@ -12,7 +12,12 @@ namespace alkazober
 {
     public partial class FormMaster : Form
     {
-        BindingSource bsProduct, bsMaterial, bsTempStandard, bsToP, bsUser;
+        private BindingSource bsProduct, bsMaterial, bsTempStandard, bsToP, bsUser;
+        private const int MODE_SIMPAN = 0;
+        private const int MODE_UPDATE = 1;
+        private int mode;
+
+
         public FormMaster()
         {
             InitializeComponent();
@@ -31,18 +36,21 @@ namespace alkazober
             loadMaterial();
             loadTempStandard();
             loadToP();
+            mode = MODE_SIMPAN;
         }
 
         private void clearProduct()
         {
             txtNmProduk.Text = "";
             txtSuhu.Text = "";
+            mode = MODE_SIMPAN;
         }
 
         private void clearMaterial()
         {
             txtMaterial.Text = "";
             txtDeskripsi.Text = "";
+            mode = MODE_SIMPAN;
         }
 
         private void clearTempStandard()
@@ -50,13 +58,14 @@ namespace alkazober
             txtTemp_C.Text = "";
             txtTemp_F.Text = "";
             txtTemp_Class.Text = "";
+            mode = MODE_SIMPAN;
         }
 
         private void clearTypeOfProtection()
         {
             txtDesignation.Text = "";
             txtTechnique.Text = "";
-          
+            mode = MODE_SIMPAN;
 
         }
 
@@ -64,6 +73,7 @@ namespace alkazober
         {
             txtNmAdmin.Text = "";
             txtKataSandi.Text = "";
+            mode = MODE_SIMPAN;
         }
 
         private void loadUser()
@@ -120,7 +130,7 @@ namespace alkazober
 
         private void updateUser(String username, String password,String id)
         {
-            String sql = "update user set username ='" + username + "',password='" + password + "' where user_id=" + id;
+            String sql = "update `user` set `username` ='" + username + "',`password`='" + password + "' where user_id=" + id;
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -173,8 +183,7 @@ namespace alkazober
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
-
-
+        
 
         private void saveTempStandard(String tempc, String tempf,String tempclass)
         {
@@ -208,7 +217,7 @@ namespace alkazober
 
         private void updateTypeOfProtection(String designation, String technique, String zone, String id)
         {
-            String sql = "update typeofprotection set designation =" + designation + ",technique=" + technique + ",zone=" + zone + " where topd_id=" + id;
+            String sql = "update typeofprotection set designation ='" + designation + "',technique='" + technique + "',`zone`='" + zone + "' where topd_id=" + id;
             DBQuery dbQ = new DBQuery();
             dbQ.ExecuteSQL(sql);
         }
@@ -226,8 +235,16 @@ namespace alkazober
             String suhu = txtSuhu.Text;
             if (nmproduk != "" && suhu != "")
             {
-                saveProduct(nmproduk, suhu);
+                if (mode == MODE_SIMPAN)
+                {
+                    saveProduct(nmproduk, suhu);
+                }else
+                {
+                    updateProduct(nmproduk, suhu, dgvProduk.CurrentRow.Cells[0].Value.ToString());
+                }
+
                 MessageBox.Show("Data Produk disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 clearProduct();
                 loadProduct();
             }else
@@ -243,7 +260,15 @@ namespace alkazober
             String deskripsi = txtDeskripsi.Text;
             if (nmmaterial != "" && deskripsi != "")
             {
-                saveMaterial(nmmaterial,deskripsi);
+                if (mode == MODE_SIMPAN)
+                {
+                    saveMaterial(nmmaterial, deskripsi);
+                }
+                else
+                {
+                    updateMaterial(nmmaterial, deskripsi, dgvMaterial.CurrentRow.Cells[0].Value.ToString());
+                }
+
                 MessageBox.Show("Data Material disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearMaterial();
                 loadMaterial();
@@ -276,7 +301,14 @@ namespace alkazober
 
             if (tempc != "" && tempf != "" && tempClass != "")
             {
-                saveTempStandard(tempc, tempf, tempClass);
+                if (mode == MODE_SIMPAN)
+                {
+                    saveTempStandard(tempc, tempf, tempClass);
+                }
+                else
+                {
+                    updateTempStandard(tempc, tempf, tempClass,dgvTempStandard.CurrentRow.Cells[0].Value.ToString());
+                }
 
                 MessageBox.Show("Data Temperatur Standard disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearTempStandard();
@@ -309,7 +341,14 @@ namespace alkazober
 
             if (designation != "" && technique != "")
             {
-                saveTypeOfProtection(designation, technique, zone);
+                if (mode == MODE_SIMPAN)
+                {
+                    saveTypeOfProtection(designation, technique, zone);
+                }else
+                {
+                    updateTypeOfProtection(designation, technique, zone, dgvToPD.CurrentRow.Cells[0].Value.ToString());
+                }
+
                 MessageBox.Show("Data Type of Protection disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearTypeOfProtection();
                 loadToP();
@@ -336,6 +375,64 @@ namespace alkazober
         {
             txtNmProduk.Text = dgvProduk.CurrentRow.Cells[1].Value.ToString();
             txtSuhu.Text = dgvProduk.CurrentRow.Cells[2].Value.ToString();
+            mode = MODE_UPDATE;
+        }
+
+        private void dgvMaterial_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaterial.Text = dgvMaterial.CurrentRow.Cells[1].Value.ToString();
+            txtDeskripsi.Text = dgvMaterial.CurrentRow.Cells[2].Value.ToString();
+            mode = MODE_UPDATE;
+        }
+
+        private void dgvTempStandard_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtTemp_C.Text  = dgvTempStandard.CurrentRow.Cells[1].Value.ToString();
+            txtTemp_F.Text = dgvTempStandard.CurrentRow.Cells[2].Value.ToString();
+            txtTemp_Class.Text = dgvTempStandard.CurrentRow.Cells[3].Value.ToString();
+            mode = MODE_UPDATE;
+
+        }
+
+        private void dgvToPD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtDesignation.Text = dgvToPD.CurrentRow.Cells[1].Value.ToString();
+            txtTechnique.Text = dgvToPD.CurrentRow.Cells[2].Value.ToString();
+            cmbZone.Text = dgvToPD.CurrentRow.Cells[3].Value.ToString();
+            mode = MODE_UPDATE;
+
+        }
+
+        private void dgvUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtNmAdmin.Text = dgvUser.CurrentRow.Cells[1].Value.ToString();
+            txtKataSandi.Text = dgvUser.CurrentRow.Cells[2].Value.ToString();
+            mode = MODE_UPDATE;
+        }
+
+        private void btnResetProduk_Click(object sender, EventArgs e)
+        {
+            clearProduct();
+        }
+
+        private void btnResetMaterial_Click(object sender, EventArgs e)
+        {
+            clearMaterial();
+        }
+
+        private void btnResetTempStandard_Click(object sender, EventArgs e)
+        {
+            clearTempStandard();
+        }
+
+        private void btnResetToP_Click(object sender, EventArgs e)
+        {
+            clearTypeOfProtection();
+        }
+
+        private void btnResetPengguna_Click(object sender, EventArgs e)
+        {
+            clearUser();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -349,7 +446,13 @@ namespace alkazober
             String password = txtKataSandi.Text;
             if (username != "" && password != "")
             {
-                saveUser(username, password);
+                if (mode == MODE_SIMPAN)
+                {
+                    saveUser(username, password);
+                }else
+                {
+                    updateUser(username, password, dgvUser.CurrentRow.Cells[0].Value.ToString());
+                }
                 MessageBox.Show("Data User disimpan!!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadUser();
                 clearUser();
