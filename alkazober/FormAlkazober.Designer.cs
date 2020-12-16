@@ -236,6 +236,9 @@
             this.cmbPenggunaan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPenggunaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPenggunaan.FormattingEnabled = true;
+            this.cmbPenggunaan.Items.AddRange(new object[] {
+            "Oil And Gas",
+            "Non Oil And Gas"});
             this.cmbPenggunaan.Location = new System.Drawing.Point(165, 66);
             this.cmbPenggunaan.Name = "cmbPenggunaan";
             this.cmbPenggunaan.Size = new System.Drawing.Size(439, 32);
@@ -261,6 +264,7 @@
             this.cmbMaterial.Name = "cmbMaterial";
             this.cmbMaterial.Size = new System.Drawing.Size(358, 32);
             this.cmbMaterial.TabIndex = 0;
+            this.cmbMaterial.SelectedIndexChanged += new System.EventHandler(this.cmbMaterial_SelectedIndexChanged);
             // 
             // tabControl2
             // 
@@ -1304,7 +1308,7 @@
             this.btnReverse.Name = "btnReverse";
             this.btnReverse.Size = new System.Drawing.Size(101, 90);
             this.btnReverse.TabIndex = 2;
-            this.btnReverse.Text = "Reverse";
+            this.btnReverse.Text = "Cari Balik";
             this.btnReverse.UseVisualStyleBackColor = false;
             this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
@@ -1318,6 +1322,7 @@
             this.btnSubmitALL.TabIndex = 1;
             this.btnSubmitALL.Text = "SUBMIT ALL";
             this.btnSubmitALL.UseVisualStyleBackColor = false;
+            this.btnSubmitALL.Click += new System.EventHandler(this.btnSubmitALL_Click);
             // 
             // groupBox2
             // 
@@ -1344,6 +1349,7 @@
             this.txtDecisionResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDecisionResult.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDecisionResult.Location = new System.Drawing.Point(22, 190);
             this.txtDecisionResult.Multiline = true;
             this.txtDecisionResult.Name = "txtDecisionResult";
@@ -1354,11 +1360,11 @@
             // lblToPD
             // 
             this.lblToPD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblToPD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblToPD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblToPD.ForeColor = System.Drawing.Color.Maroon;
-            this.lblToPD.Location = new System.Drawing.Point(324, 141);
+            this.lblToPD.Location = new System.Drawing.Point(30, 155);
             this.lblToPD.Name = "lblToPD";
-            this.lblToPD.Size = new System.Drawing.Size(131, 33);
+            this.lblToPD.Size = new System.Drawing.Size(425, 27);
             this.lblToPD.TabIndex = 5;
             this.lblToPD.Text = "?????";
             this.lblToPD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1367,7 +1373,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 148);
+            this.label8.Location = new System.Drawing.Point(27, 131);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(230, 16);
             this.label8.TabIndex = 4;
@@ -1376,11 +1382,11 @@
             // lblClassMST
             // 
             this.lblClassMST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblClassMST.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClassMST.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClassMST.ForeColor = System.Drawing.Color.Maroon;
-            this.lblClassMST.Location = new System.Drawing.Point(374, 89);
+            this.lblClassMST.Location = new System.Drawing.Point(30, 95);
             this.lblClassMST.Name = "lblClassMST";
-            this.lblClassMST.Size = new System.Drawing.Size(81, 33);
+            this.lblClassMST.Size = new System.Drawing.Size(425, 33);
             this.lblClassMST.TabIndex = 3;
             this.lblClassMST.Text = "?????";
             this.lblClassMST.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1389,7 +1395,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 96);
+            this.label6.Location = new System.Drawing.Point(27, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(336, 16);
             this.label6.TabIndex = 2;

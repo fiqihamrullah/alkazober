@@ -113,5 +113,15 @@ namespace alkazober
             frmAlkazober.ShowDialog();
 
         }
+
+        public void hideMasterDataMenu()
+        {
+            masterDataToolStripMenuItem.Visible = false;
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

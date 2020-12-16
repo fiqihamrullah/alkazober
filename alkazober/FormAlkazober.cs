@@ -16,6 +16,7 @@ namespace alkazober
 
         private int[] izones;
         private double[] dT;
+        private int icheck = 0;
         
         public FormAlkazober()
         {
@@ -23,8 +24,19 @@ namespace alkazober
             loadMasterData();
             izones = new int[6];
             dT = new double[6];
+            initForms();
             
               
+        }
+
+        private void initForms()
+        {
+            resetTangkiTimbun();
+            resetFillingRTWMT();
+            resetDermagaMLA();
+            resetpumpCompressor();
+            resetVenting();
+            resetReliefValve(); 
         }
 
 
@@ -69,7 +81,7 @@ namespace alkazober
             cmbMaterial.DisplayMember = "nm_material";
             cmbMaterial.ValueMember = "nm_material";
 
-            sql = "select * from tempstandard";
+            sql = "select * from tempstandard";// order by temp_c desc";
             dbq.FillTableBySQL(sql);
             dtTempStandard = dbq.GetTable();
 
@@ -82,7 +94,88 @@ namespace alkazober
 
         }
 
-       
+        private void SolveTClass(double T)
+        {
+            String class_t = "";
+            int idx_row_min =0;
+
+
+
+            for(int i=0;i < dtTempStandard.Rows.Count;i++)
+            {
+                String data = dtTempStandard.Rows[i]["temp_c"].ToString();
+                double ddata = Double.Parse(data);
+
+                if (ddata < T)
+                {
+                    idx_row_min = i;
+                    break;
+                }
+
+
+            }
+
+            for (int i= dtTempStandard.Rows.Count;i >idx_row_min;i-- )
+            {
+                String data = dtTempStandard.Rows[i-1]["temp_class"].ToString();
+                class_t = class_t + data + ",";
+            }
+
+            class_t = class_t.TrimEnd(new char[] { ',' });
+
+            lblClassMST.Text = class_t;
+
+            
+
+
+
+
+
+
+        }
+
+        private void SolveTypeProtectionDesignation(int zone)
+        {
+            string strzone = "";
+            string result = "";
+            if (zone ==-1)
+            {
+                strzone = "Unclassified";            }
+            else
+            {
+                strzone = zone.ToString();
+            }
+
+            for(int i=0;i<dtToP.Rows.Count;i++)
+            {
+                string curzone = dtToP.Rows[i]["zone"].ToString();
+                if (curzone.Equals(strzone))
+                {
+                    string data = dtToP.Rows[i]["designation"].ToString();
+                    result = result + data + ",";
+                }
+
+            }
+
+            result = result.TrimEnd(new char[] { ',' });
+            
+
+            if (zone==-1)
+            {
+                lblToPD.Text = "";
+            }else
+            {
+                lblToPD.Text = result;
+            }
+
+
+ 
+
+ 
+        }
+
+
+
         private void resetTangkiTimbun()
         {
             txtDindingTangkiDistance.Text = "0";
@@ -165,9 +258,17 @@ namespace alkazober
 
         }
 
-        private void submitTangkiTimbun()
+        private void submitTangkiTimbun(int idx_product)
         {
+            
 
+                if (chkTangkiTimbun.Checked)
+                {
+                    solveTangkiTimbun(idx_product);
+                     icheck++;
+                }
+            
+             
         }
 
         private void solveTangkiTimbun(int idxProduct)
@@ -231,7 +332,7 @@ namespace alkazober
 
            if (izone != -1)
            {
-                        lblDivisionClass.Text = "Class 1 Zone " +  izone.ToString();
+                        lblDivisionClass.Text = "Class 1 Zona " +  izone.ToString();
            } else
            {
                         lblDivisionClass.Text = "Unclassified";
@@ -256,8 +357,17 @@ namespace alkazober
 
         }
 
-        private void submitFillingRTWMT()
+        private void submitFillingRTWMT(int idx_product)
         {
+
+            
+
+                if (chkFillingRTWMT.Checked)
+                {
+                    solveFillingRTWMT(idx_product);
+                    icheck++;
+                }
+            
 
         }
 
@@ -338,8 +448,15 @@ namespace alkazober
  
         }
 
-        private void submitDermagaLMA()
+        private void submitDermagaLMA(int idx_product)
         {
+       
+                if (chkDermagaMLA.Checked)
+                {
+                    solveDermagaLMA(idx_product);
+                    icheck++;
+                }
+           
 
         }
 
@@ -470,8 +587,16 @@ namespace alkazober
  
         }
 
-        private void submitRumahPompaCompressor()
+        private void submitRumahPompaCompressor(int idx_product)
         {
+           
+
+                if (chkRumahPompa.Checked)
+                {
+                    solveDermagaLMA(idx_product);
+                     icheck++;
+                }
+           
 
         }
 
@@ -539,8 +664,13 @@ namespace alkazober
     
         }
 
-        private void submitVenting()
+        private void submitVenting(int idx_product)
         {
+            if (chkVenting.Checked)
+            {
+                solveVenting(idx_product);
+                icheck++;
+            }
 
         }
 
@@ -598,9 +728,13 @@ namespace alkazober
  
         }
 
-        private void submitReliefValve()
+        private void submitReliefValve(int idx_product)
         {
-
+            if (chkReliefValve.Checked)
+            {
+                solveReliefValve(idx_product);
+                icheck++;
+            }
         }
 
         private void solveReliefValve(int idxProduct)
@@ -653,10 +787,130 @@ namespace alkazober
     
         }
 
+        private void btnSubmitALL_Click(object sender, EventArgs e)
+        {
+            int idx_product = 0; int idx_material = 0;int izone = 0;
+            double T;
+            idx_product = cmbproduktt.SelectedIndex;
+            idx_material = cmbMaterial.SelectedIndex;
+
+            if (idx_product == -1 || idx_material == -1)
+            {
+                MessageBox.Show("Produk atau Material  belum dipilih", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                icheck = 0;
+                submitTangkiTimbun(idx_product);
+                submitFillingRTWMT(idx_product);
+                submitDermagaLMA(idx_product);
+                submitRumahPompaCompressor(idx_product);
+                submitVenting(idx_product);
+                submitReliefValve(idx_product);
+
+                if (icheck>0)
+                {
+
+                    izone = getMostStrictZone();
+                    T = getMostStrictT();
+
+                    if ((cmbPenggunaan.SelectedIndex==0) && (cmbPenggunaan.Enabled))
+                    {
+                        izone = 0;
+                    }
+
+                   if (izone != -1 )
+                    {
+                        lblDivisionClass.Text = "Class 1 Zona " + izone.ToString();
+                    }else
+                    {
+                        lblDivisionClass.Text = "Unclassified";
+                    }
+
+                    SolveTClass(T);
+                    SolveTypeProtectionDesignation(izone);
+
+                    txtDecisionResult.Text = dtMaterial.Rows[cmbMaterial.SelectedIndex]["deskripsi"].ToString();
+
+
+
+
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Tidak ada satupun yang terpilih dekat!","Informasi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+
+
+
+            }
+        }
+
+        private int getMostStrictZone()
+        {
+            int izone, i;
+            izone = 3;
+
+            for (i=0;i<izones.Length;i++)
+            {
+                if (izones[i] !=-1 && izones[i] !=0)
+                {
+                    if (izone > izones[i])
+                    {
+                        izone = izones[i];
+                    }
+                }
+
+            }
+
+            if (izone==3)
+            {
+                izone = -1;
+            } 
+  
+             return izone;
+
+        }
+
+        private double getMostStrictT()
+        {
+             
+            double T = 0;
+
+            for (int i=0;i< dT.Length;i++)
+            {
+                if (T < dT[i])
+                {
+                    T = dT[i];
+                }
+            }
+
+            return T;
+
+  
+        }
+
+        private void cmbMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+            if (cmbMaterial.SelectedIndex==1 || cmbMaterial.SelectedIndex ==4)
+            {
+                cmbPenggunaan.Enabled = true;
+            }else
+            {
+                cmbPenggunaan.Enabled = false;
+            }
+        }
+
         private void btnReverse_Click(object sender, EventArgs e)
         {
-            String dat = dtProduct.Rows[cmbproduktt.SelectedIndex]["suhu"].ToString();
-            MessageBox.Show(dat);
+            //  String dat = dtProduct.Rows[cmbproduktt.SelectedIndex]["suhu"].ToString();
+            // MessageBox.Show(dat);
+            FormReverseSearch frmReverseSearch = new FormReverseSearch();
+            frmReverseSearch.ShowDialog();
+
         }
 
      
@@ -670,6 +924,11 @@ namespace alkazober
         private void btnResetALL_Click(object sender, EventArgs e)
         {
             resetAll();
+
+            lblDivisionClass.Text = "?????";
+            lblClassMST.Text = "????";
+            lblToPD.Text = "?????";
         }
     }
 }
+

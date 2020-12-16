@@ -10,3 +10,4 @@ C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazobe
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.FormLogin.resources
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.FormMaster.resources
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.MainMenu.resources
+C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.FormReverseSearch.resources

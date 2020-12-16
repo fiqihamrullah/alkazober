@@ -56,6 +56,7 @@ namespace alkazober
             }else
             {
                 MainMenu mainMenu = new MainMenu();
+                mainMenu.hideMasterDataMenu();
                 mainMenu.Show();
                 this.Hide();
             }

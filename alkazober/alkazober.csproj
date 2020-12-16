@@ -67,6 +67,12 @@
     <Compile Include="FormMaster.Designer.cs">
       <DependentUpon>FormMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReverseSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReverseSearch.Designer.cs">
+      <DependentUpon>FormReverseSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaster.resx">
       <DependentUpon>FormMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReverseSearch.resx">
+      <DependentUpon>FormReverseSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -151,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\trash_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
