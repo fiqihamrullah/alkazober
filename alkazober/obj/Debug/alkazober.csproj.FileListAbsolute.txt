@@ -11,3 +11,18 @@ C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazobe
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.FormMaster.resources
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.MainMenu.resources
 C:\Users\Fiqih Leonhart\documents\visual studio 2015\Projects\alkazober\alkazober\obj\Debug\alkazober.FormReverseSearch.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\bin\Debug\alkazober.exe.config
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\bin\Debug\alkazober.exe
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\bin\Debug\alkazober.pdb
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.csproj.AssemblyReference.cache
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.csproj.SuggestedBindingRedirects.cache
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.FormAlkazober.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.FormLogin.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.FormMaster.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.FormReverseSearch.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.MainMenu.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.Properties.Resources.resources
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.csproj.GenerateResource.cache
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.csproj.CoreCompileInputs.cache
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.exe
+D:\Portpolio\ExpertSystem\Alkazober\alkazober\obj\Debug\alkazober.pdb

@@ -14,6 +14,7 @@ namespace alkazober
 
         public DBConnection()
         {
+          
             oledbConn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "/alkazober.accdb"   );
         }
 
