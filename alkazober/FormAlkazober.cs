@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace alkazober
 {
@@ -125,8 +126,8 @@ namespace alkazober
 
             lblClassMST.Text = class_t;
 
-            
 
+          
 
 
 
@@ -593,7 +594,7 @@ namespace alkazober
 
                 if (chkRumahPompa.Checked)
                 {
-                    solveDermagaLMA(idx_product);
+                    solveRumahPompaCompressor(idx_product);
                      icheck++;
                 }
            
