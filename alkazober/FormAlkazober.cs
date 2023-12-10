@@ -833,12 +833,6 @@ namespace alkazober
 
                     txtDecisionResult.Text = dtMaterial.Rows[cmbMaterial.SelectedIndex]["deskripsi"].ToString();
 
-
-
-
-
-
-
                 }
                 else
                 {
