@@ -6,7 +6,7 @@
 
  ## **Video Demo**
 
- Here's [link](https://drive.google.com/file/d/1EnwTvKnmizFP3SjIOfxCMoUi4mOFjPKP/view?usp=drive_link) to see how it works
+ https://github.com/fiqihamrullah/alkazober/assets/68839112/1ad347ba-7f58-4d8c-8c17-eaafbd786cfe
 
 
 ## Run Locally
